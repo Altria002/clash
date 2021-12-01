@@ -5,125 +5,53 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇺🇲 馃嚭馃嚫 US_387, server: 107.189.12.75, port: 80, type: vmess, uuid: 261aeb5f-b6f7-359c-a321-9794bf344e12, alterId: 2, cipher: auto, tls: false, network: ws, ws-path: /v2ray, ws-headers: {Host: 107.189.12.75}}
-  - {name: 🇺🇲 馃嚭馃嚫 US_324, server: 172.99.190.90, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇲 馃嚭馃嚫 US_377, server: 38.39.192.74, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇲 馃嚭馃嚫 US_307, server: 38.39.192.74, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇲 馃嚭馃嚫 US_290, server: 172.99.190.186, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇲 馃嚭馃嚫 US_308, server: 38.39.192.74, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇲 馃嚭馃嚫 US_346, server: 38.39.192.74, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇲 馃嚭馃嚫 US_299, server: 172.99.190.186, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇺🇲 馃嚭馃嚫 US_339, server: 172.99.190.186, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇺🇲 馃嚭馃嚫 US_356, server: 172.99.190.186, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇯🇵 Altria Japan, server: 20.78.152.216, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: qaz753wsx86}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇺🇲 馃嚭馃嚫 US_387
-      - 🇺🇲 馃嚭馃嚫 US_324
-      - 🇺🇲 馃嚭馃嚫 US_377
-      - 🇺🇲 馃嚭馃嚫 US_307
-      - 🇺🇲 馃嚭馃嚫 US_290
-      - 🇺🇲 馃嚭馃嚫 US_308
-      - 🇺🇲 馃嚭馃嚫 US_346
-      - 🇺🇲 馃嚭馃嚫 US_299
-      - 🇺🇲 馃嚭馃嚫 US_339
-      - 🇺🇲 馃嚭馃嚫 US_356
+      - 🇯🇵 Altria Japan
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇺🇲 馃嚭馃嚫 US_387
-      - 🇺🇲 馃嚭馃嚫 US_324
-      - 🇺🇲 馃嚭馃嚫 US_377
-      - 🇺🇲 馃嚭馃嚫 US_307
-      - 🇺🇲 馃嚭馃嚫 US_290
-      - 🇺🇲 馃嚭馃嚫 US_308
-      - 🇺🇲 馃嚭馃嚫 US_346
-      - 🇺🇲 馃嚭馃嚫 US_299
-      - 🇺🇲 馃嚭馃嚫 US_339
-      - 🇺🇲 馃嚭馃嚫 US_356
+      - 🇯🇵 Altria Japan
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇲 馃嚭馃嚫 US_387
-      - 🇺🇲 馃嚭馃嚫 US_324
-      - 🇺🇲 馃嚭馃嚫 US_377
-      - 🇺🇲 馃嚭馃嚫 US_307
-      - 🇺🇲 馃嚭馃嚫 US_290
-      - 🇺🇲 馃嚭馃嚫 US_308
-      - 🇺🇲 馃嚭馃嚫 US_346
-      - 🇺🇲 馃嚭馃嚫 US_299
-      - 🇺🇲 馃嚭馃嚫 US_339
-      - 🇺🇲 馃嚭馃嚫 US_356
+      - 🇯🇵 Altria Japan
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇲 馃嚭馃嚫 US_387
-      - 🇺🇲 馃嚭馃嚫 US_324
-      - 🇺🇲 馃嚭馃嚫 US_377
-      - 🇺🇲 馃嚭馃嚫 US_307
-      - 🇺🇲 馃嚭馃嚫 US_290
-      - 🇺🇲 馃嚭馃嚫 US_308
-      - 🇺🇲 馃嚭馃嚫 US_346
-      - 🇺🇲 馃嚭馃嚫 US_299
-      - 🇺🇲 馃嚭馃嚫 US_339
-      - 🇺🇲 馃嚭馃嚫 US_356
+      - 🇯🇵 Altria Japan
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇺🇲 馃嚭馃嚫 US_387
-      - 🇺🇲 馃嚭馃嚫 US_324
-      - 🇺🇲 馃嚭馃嚫 US_377
-      - 🇺🇲 馃嚭馃嚫 US_307
-      - 🇺🇲 馃嚭馃嚫 US_290
-      - 🇺🇲 馃嚭馃嚫 US_308
-      - 🇺🇲 馃嚭馃嚫 US_346
-      - 🇺🇲 馃嚭馃嚫 US_299
-      - 🇺🇲 馃嚭馃嚫 US_339
-      - 🇺🇲 馃嚭馃嚫 US_356
+      - 🇯🇵 Altria Japan
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇺🇲 馃嚭馃嚫 US_387
-      - 🇺🇲 馃嚭馃嚫 US_324
-      - 🇺🇲 馃嚭馃嚫 US_377
-      - 🇺🇲 馃嚭馃嚫 US_307
-      - 🇺🇲 馃嚭馃嚫 US_290
-      - 🇺🇲 馃嚭馃嚫 US_308
-      - 🇺🇲 馃嚭馃嚫 US_346
-      - 🇺🇲 馃嚭馃嚫 US_299
-      - 🇺🇲 馃嚭馃嚫 US_339
-      - 🇺🇲 馃嚭馃嚫 US_356
+      - 🇯🇵 Altria Japan
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇲 馃嚭馃嚫 US_387
-      - 🇺🇲 馃嚭馃嚫 US_324
-      - 🇺🇲 馃嚭馃嚫 US_377
-      - 🇺🇲 馃嚭馃嚫 US_307
-      - 🇺🇲 馃嚭馃嚫 US_290
-      - 🇺🇲 馃嚭馃嚫 US_308
-      - 🇺🇲 馃嚭馃嚫 US_346
-      - 🇺🇲 馃嚭馃嚫 US_299
-      - 🇺🇲 馃嚭馃嚫 US_339
-      - 🇺🇲 馃嚭馃嚫 US_356
+      - 🇯🇵 Altria Japan
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -146,16 +74,7 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇲 馃嚭馃嚫 US_387
-      - 🇺🇲 馃嚭馃嚫 US_324
-      - 🇺🇲 馃嚭馃嚫 US_377
-      - 🇺🇲 馃嚭馃嚫 US_307
-      - 🇺🇲 馃嚭馃嚫 US_290
-      - 🇺🇲 馃嚭馃嚫 US_308
-      - 🇺🇲 馃嚭馃嚫 US_346
-      - 🇺🇲 馃嚭馃嚫 US_299
-      - 🇺🇲 馃嚭馃嚫 US_339
-      - 🇺🇲 馃嚭馃嚫 US_356
+      - 🇯🇵 Altria Japan
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
@@ -2337,9 +2256,6 @@ rules:
  - DOMAIN-SUFFIX,youtu.be,🌍 国外媒体
  - DOMAIN-SUFFIX,youtube.com,🌍 国外媒体
  - DOMAIN-SUFFIX,ytimg.com,🌍 国外媒体
- - PROCESS-NAME,com.google.android.apps.youtube.music,🌍 国外媒体
- - PROCESS-NAME,com.google.android.youtube.tvmusicroot,🌍 国外媒体
- - PROCESS-NAME,com.vanced.android.apps.youtube.music,🌍 国外媒体
  - DOMAIN-SUFFIX,1password.com,🚀 节点选择
  - DOMAIN-SUFFIX,adguard.org,🚀 节点选择
  - DOMAIN-SUFFIX,bit.no.com,🚀 节点选择
@@ -2352,6 +2268,8 @@ rules:
  - DOMAIN-SUFFIX,hoyolab.com,🚀 节点选择
  - DOMAIN-SUFFIX,inoreader.com,🚀 节点选择
  - DOMAIN-SUFFIX,ip138.com,🚀 节点选择
+ - DOMAIN-SUFFIX,myteamspeak.com,🚀 节点选择
+ - DOMAIN-SUFFIX,notion.so,🚀 节点选择
  - DOMAIN-SUFFIX,ping.pe,🚀 节点选择
  - DOMAIN-SUFFIX,reddit.com,🚀 节点选择
  - DOMAIN-SUFFIX,teddysun.com,🚀 节点选择
