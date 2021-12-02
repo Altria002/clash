@@ -5,53 +5,69 @@ mode: Rule
 log-level: info
 external-controller: 127.0.0.1:9090
 proxies:
-  - {name: 🇯🇵 Altria Japan, server: 20.78.152.216, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: qaz753wsx86}
+  - {name: 🇯🇵 AZ日本-节点机, server: 20.78.152.216, port: 80, type: ss, cipher: chacha20-ietf-poly1305, password: qaz753wsx86}
+  - {name: 🇯🇵 AZ日本-节点机 2, server: 20.78.152.216, port: 33830, type: ss, cipher: aes-256-gcm, password: qaz753wsx86}
+  - {name: 🇯🇵 AZ日本-节点机 3, server: 20.78.152.216, port: 80, type: vmess, uuid: fb3747ac-3737-48c3-b63c-223f0b13fe1a, alterId: 0, cipher: auto, tls: false}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - DIRECT
-      - 🇯🇵 Altria Japan
+      - 🇯🇵 AZ日本-节点机
+      - 🇯🇵 AZ日本-节点机 2
+      - 🇯🇵 AZ日本-节点机 3
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 Altria Japan
+      - 🇯🇵 AZ日本-节点机
+      - 🇯🇵 AZ日本-节点机 2
+      - 🇯🇵 AZ日本-节点机 3
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🚀 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇯🇵 Altria Japan
+      - 🇯🇵 AZ日本-节点机
+      - 🇯🇵 AZ日本-节点机 2
+      - 🇯🇵 AZ日本-节点机 3
   - name: 📲 电报信息
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 Altria Japan
+      - 🇯🇵 AZ日本-节点机
+      - 🇯🇵 AZ日本-节点机 2
+      - 🇯🇵 AZ日本-节点机 3
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🚀 节点选择
-      - 🇯🇵 Altria Japan
+      - 🇯🇵 AZ日本-节点机
+      - 🇯🇵 AZ日本-节点机 2
+      - 🇯🇵 AZ日本-节点机 3
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
-      - 🇯🇵 Altria Japan
+      - 🇯🇵 AZ日本-节点机
+      - 🇯🇵 AZ日本-节点机 2
+      - 🇯🇵 AZ日本-节点机 3
   - name: 📢 谷歌FCM
     type: select
     proxies:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 Altria Japan
+      - 🇯🇵 AZ日本-节点机
+      - 🇯🇵 AZ日本-节点机 2
+      - 🇯🇵 AZ日本-节点机 3
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -74,7 +90,9 @@ proxy-groups:
       - 🚀 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇯🇵 Altria Japan
+      - 🇯🇵 AZ日本-节点机
+      - 🇯🇵 AZ日本-节点机 2
+      - 🇯🇵 AZ日本-节点机 3
 rules:
  - DOMAIN-SUFFIX,acl4.ssr,🎯 全球直连
  - DOMAIN-SUFFIX,ip6-localhost,🎯 全球直连
