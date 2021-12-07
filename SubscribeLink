@@ -1,9 +1,125 @@
 port: 7890
 socks-port: 7891
-allow-lan: true
+redir-port: 7892
+mixed-port: 7893
+allow-lan: false
 mode: Rule
 log-level: info
-external-controller: :9090
+ipv6: false
+hosts:
+  services.googleapis.cn: 142.250.196.131
+  www.google.cn: 142.250.196.131
+  occ-0-2774-64.1.nflxso.net: 23.246.54.152
+external-controller: 0.0.0.0:9090
+clash-for-android:
+  append-system-dns: false
+profile:
+  tracing: true
+dns:
+  enable: true
+  listen: 127.0.0.1:8853
+  default-nameserver:
+    - 223.5.5.5
+    - 1.0.0.1
+  ipv6: false
+  enhanced-mode: fake-ip
+  fake-ip-filter:
+    - "*.lan"
+    - stun.*.*.*
+    - stun.*.*
+    - time.windows.com
+    - time.nist.gov
+    - time.apple.com
+    - time.asia.apple.com
+    - "*.ntp.org.cn"
+    - "*.openwrt.pool.ntp.org"
+    - time1.cloud.tencent.com
+    - time.ustc.edu.cn
+    - pool.ntp.org
+    - ntp.ubuntu.com
+    - ntp.aliyun.com
+    - ntp1.aliyun.com
+    - ntp2.aliyun.com
+    - ntp3.aliyun.com
+    - ntp4.aliyun.com
+    - ntp5.aliyun.com
+    - ntp6.aliyun.com
+    - ntp7.aliyun.com
+    - time1.aliyun.com
+    - time2.aliyun.com
+    - time3.aliyun.com
+    - time4.aliyun.com
+    - time5.aliyun.com
+    - time6.aliyun.com
+    - time7.aliyun.com
+    - "*.time.edu.cn"
+    - time1.apple.com
+    - time2.apple.com
+    - time3.apple.com
+    - time4.apple.com
+    - time5.apple.com
+    - time6.apple.com
+    - time7.apple.com
+    - time1.google.com
+    - time2.google.com
+    - time3.google.com
+    - time4.google.com
+    - music.163.com
+    - "*.music.163.com"
+    - "*.126.net"
+    - musicapi.taihe.com
+    - music.taihe.com
+    - songsearch.kugou.com
+    - trackercdn.kugou.com
+    - "*.kuwo.cn"
+    - api-jooxtt.sanook.com
+    - api.joox.com
+    - joox.com
+    - y.qq.com
+    - "*.y.qq.com"
+    - streamoc.music.tc.qq.com
+    - mobileoc.music.tc.qq.com
+    - isure.stream.qqmusic.qq.com
+    - dl.stream.qqmusic.qq.com
+    - aqqmusic.tc.qq.com
+    - amobile.music.tc.qq.com
+    - "*.xiami.com"
+    - "*.music.migu.cn"
+    - music.migu.cn
+    - "*.msftconnecttest.com"
+    - "*.msftncsi.com"
+    - localhost.ptlogin2.qq.com
+    - "*.*.*.srv.nintendo.net"
+    - "*.*.stun.playstation.net"
+    - xbox.*.*.microsoft.com
+    - "*.ipv6.microsoft.com"
+    - "*.*.xboxlive.com"
+    - speedtest.cros.wr.pvp.net
+  nameserver:
+    - https://223.6.6.6/dns-query
+    - https://rubyfish.cn/dns-query
+    - tls://223.5.5.5:853
+  fallback:
+    - https://dns.rubyfish.cn/dns-query
+    - https://public.dns.iij.jp/dns-query
+    - tls://8.8.4.4
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+      - 0.0.0.0/32
+      - 127.0.0.1/32
+    domain:
+      - +.google.com
+      - +.facebook.com
+      - +.twitter.com
+      - +.youtube.com
+      - +.googlevideo
+      - +.xn--ngstr-lra8j.com
+      - +.google.cn
+      - +.googleapis.cn
+      - +.googleapis.com
+      - +.gvt1.com
 proxies:
   - {name: 🇯🇵 AZ日本-稳定节点机, server: 20.89.233.14, port: 80, type: vmess, uuid: 1fad13e2-f07c-4660-ae1a-925005218792, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇭🇰 AZ香港2-F2S-随时挂, server: 20.187.122.82, port: 23361, type: vmess, uuid: 8a5d78bb-3884-4ca9-a14d-745efd073353, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: shoutingtoutiao3.10010.com}}
@@ -13,14 +129,18 @@ proxies:
   - {name: 🇺🇸 樱花美国, server: apn-pw.connect-node.xyz, port: 8443, type: vmess, uuid: 91e5d3a6-5a2b-34d8-9046-144d2fb835cc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /web, ws-headers: {Host: pw-usa.connect-node.xyz}}
   - {name: 🇵🇭 樱花菲律宾, server: apn-pw.connect-node.xyz, port: 443, type: vmess, uuid: 91e5d3a6-5a2b-34d8-9046-144d2fb835cc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /web, ws-headers: {Host: pw-phi.connect-node.xyz}}
   - {name: 🇯🇵 AZ日本-稳定节点机 2, server: 20.89.233.14, port: 80, type: vmess, uuid: 1fad13e2-f07c-4660-ae1a-925005218792, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
-  - {name: 🇭🇰 AZ香港2-F2S-随时挂 2, server: 20.187.122.82, port: 23361, type: vmess, uuid: 8a5d78bb-3884-4ca9-a14d-745efd073353, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /, ws-headers: {Host: shoutingtoutiao3.10010.com}}
+  - {name: hax欧洲节点机, server: 91.134.238.131, port: 2083, type: vmess, uuid: 9a070d10-5643-11ec-9ec2-1495dbb28315, alterId: 32, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /fastssh, ws-headers: {Host: s.youtube.com}}
+  - {name: 🇺🇸 美国, server: 70.39.71.2, port: 8389, type: ss, cipher: chacha20-ietf-poly1305, password: XkH8z99cQguQ8ywK5jhV}
+  - {name: 🇺🇸 美国 2, server: apn-pw.connect-node.xyz, port: 8443, type: vmess, uuid: 91e5d3a6-5a2b-34d8-9046-144d2fb835cc, alterId: 0, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /web, ws-headers: {Host: pw-usa.connect-node.xyz}}
+  - {name: 节点3, server: cm2.cheapv2.xyz, port: 28802, type: vmess, uuid: 44b7192f-7539-3cde-a0a7-2d4d1361cadf, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: cm2.cheapv2.xyz}}
+  - {name: 节点1, server: cu.cheapv2.xyz, port: 23308, type: vmess, uuid: 44b7192f-7539-3cde-a0a7-2d4d1361cadf, alterId: 2, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-path: /index, ws-headers: {Host: cu.cheapv2.xyz}}
+  - {name: 节点2, server: usa-washington.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-path: /ws, ws-headers: {Host: usa-washington.lvuft.com}}
 proxy-groups:
   - name: 🇭🇰 香港节点
     type: select
     proxies:
       - 🇭🇰 AZ香港2-F2S-随时挂
       - 🇭🇰 V2云香港
-      - 🇭🇰 AZ香港2-F2S-随时挂 2
   - name: 🇯🇵 日本节点
     type: select
     proxies:
@@ -30,6 +150,8 @@ proxy-groups:
     type: select
     proxies:
       - 🇺🇸 樱花美国
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
   - name: 🇨🇳 台湾节点
     type: select
     proxies:
@@ -62,7 +184,12 @@ proxy-groups:
       - 🇺🇸 樱花美国
       - 🇵🇭 樱花菲律宾
       - 🇯🇵 AZ日本-稳定节点机 2
-      - 🇭🇰 AZ香港2-F2S-随时挂 2
+      - hax欧洲节点机
+      - 🇺🇸 美国
+      - 🇺🇸 美国 2
+      - 节点3
+      - 节点1
+      - 节点2
   - name: 📲 聊天软件
     type: select
     proxies:
