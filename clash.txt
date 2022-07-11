@@ -5,71 +5,931 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: V2云香港节点, server: 20.205.14.123, port: 80, type: vmess, uuid: c93e39f8-f124-36c2-ad0c-c150e24cec82, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 20.205.14.123}, udp: true}
-  - {name: V2云俄罗斯节点, server: 45.8.158.71, port: 80, type: vmess, uuid: c93e39f8-f124-36c2-ad0c-c150e24cec82, alterId: 2, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 45.8.158.71}, udp: true}
-  - {name: 日本, server: 172.104.98.216, port: 80, type: vmess, uuid: e5af0cad-295c-37b2-b601-f35d13f6b1bb, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 172.104.98.216}, udp: true}
-  - {name: (欢迎订阅youtube：8度科技), server: 194.135.32.208, port: 32551, type: vmess, uuid: 9d40aefc-54d9-11ec-af2d-f2c157360b1e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /W9s28k1i/, ws-headers: {Host: 194.135.32.208}, udp: true}
-  - {name: (欢迎订阅youtube：8度科技) 2, server: usa-miami.lvuft.com, port: 443, type: vmess, uuid: aba50dd4-5484-3b05-b14a-4661caf862d5, alterId: 4, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-path: /ws, ws-headers: {Host: usa-miami.lvuft.com}, udp: true}
-  - {name: _US_美国, server: 142.202.48.34, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: (欢迎订阅youtube：8度科技) 3, server: 37.19.218.197, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: Mx6DztQqZb7j34FdWjER, udp: true}
-  - {name: (欢迎订阅youtube：8度科技) 4, server: 107.161.50.42, port: 22401, type: vmess, uuid: d064d11b-477c-4c5d-a2d8-9fd599ef8e79, alterId: 1, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-path: /, ws-headers: {Host: 107.161.50.42}, udp: true}
-  - {name: _US_美国 2, server: 142.202.48.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP, udp: true}
-  - {name: _US_美国 3, server: 142.202.48.34, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27, udp: true}
-  - {name: _US_美国 4, server: 38.91.100.200, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm, udp: true}
-  - {name: (欢迎订阅youtube：8度科技) 5, server: 141.95.0.26, port: 826, type: ss, cipher: chacha20-ietf-poly1305, password: sF43Xt2gONqcgFX563, udp: true}
+  - {name: ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B01, server: pccw01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B02, server: pccw02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B03, server: pccw03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B04, server: pccw04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B05, server: pccw05.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B06, server: pccw06.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B07, server: pccw07.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B08, server: pccw08.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B09, server: pccw09.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B10, server: pvcc01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: IPV6接入  HIFI音乐优化, server: 2401:7340:1000:1::7, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: IPV6接入  优化#我编不下去了, server: 2401:7340:1000:1::2, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: IPV6接入 嘉心糖优化#嘉然姫の犬, server: 2401:7340:1000:1::11, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: IPV6接入 摄影优化#忠祥 拍摄超级利器 尼康800定, server: 2401:7340:1000:1::8, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: IPV6接入 未知优化, server: 2401:7340:1000:1::4, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: IPV6接入 标准配置#朦胧幻象, server: 2401:7340:1000:1::12, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: IPV6接入 没有优化, server: 2401:7340:1000:1::3, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: IPV6接入 网课优化#Nuclear 101-核武器设计与制造, server: 2401:7340:1000:1::10, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: IPV6接入 脆鲨优化#YBB APEX日服, server: 2401:7340:1000:1::9, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: IPV6接入 视频优化, server: 2401:7340:1000:1::6, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: IPV6接入 随便瞎优化, server: 2401:7340:1000:1::5, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-加拿大 IPLC B01, server: ca01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-加拿大 IPLC B02, server: ca02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-加拿大 IPLC B03, server: ca03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-加拿大 IPLC B04, server: ca04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-加拿大 IPLC B05, server: ca05.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-印度 IPLC B01 孟买, server: in01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-印度 IPLC B02 孟买, server: in02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-印度 IPLC B03 贾坎德, server: in03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-印度 IPLC B04 贾坎德, server: in04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-印度 IPLC B05 贾坎德, server: in05.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-印度 IPLC B06 贾坎德, server: in06.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-印度 IPLC B07 泰米尔纳德, server: in07.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-印度 IPLC B08 泰米尔纳德, server: in08.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接 B01, server: tw01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接 B02, server: tw02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接 B03, server: tw03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接 B04, server: tw04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接 B05, server: tw05.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接 B06, server: tw06.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接 B07, server: tw07.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接 B08, server: tw08.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾IEPL Hinet固接 B09, server: tw09.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾嘉义 IPLC B01 游戏专线Netflix 动画疯, server: twgame01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾嘉义 IPLC B02 游戏专线Netflix 动画疯, server: twgame02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾嘉义 IPLC B03 游戏专线Netflix 动画疯, server: twgame03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾嘉义 IPLC B04 游戏专线Netflix 动画疯, server: twgame04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾嘉义 IPLC B05 游戏专线Netflix 动画疯, server: twgame05.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾嘉义 IPLC B06 游戏专线Netflix 动画疯, server: twgame06.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾嘉义 IPLC B07 游戏专线Netflix 动画疯, server: twgame07.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾嘉义 IPLC B08 游戏专线Netflix 动画疯, server: twgame08.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾嘉义 IPLC B09 游戏专线Netflix 动画疯, server: twgame09.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾高雄 IPLC B01 Netflix 动画疯, server: twct01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾高雄 IPLC B02 Netflix 动画疯, server: twct02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾高雄 IPLC B03 Netflix 动画疯, server: twct03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾高雄 IPLC B04 Netflix 动画疯, server: twct04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾高雄 IPLC B05 Netflix 动画疯, server: twct05.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾高雄 IPLC B06 Netflix 动画疯, server: twct06.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾高雄 IPLC B07 Netflix 动画疯, server: twct07.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾高雄 IPLC B08 Netflix 动画疯, server: twct08.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-台湾高雄 IPLC B09 Netflix 动画疯, server: twct09.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 B1 1000Mbps, server: hr01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 B2 1000Mbps, server: hr02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 B3 1000Mbps, server: hr03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 B4 1000Mbps, server: hr04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 B6 1000Mbps, server: hr06.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 B7 1000Mbps, server: hr07.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 B8 1000Mbps, server: hr08.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 多协议标签交换虚拟专用网 B9 1000Mbps, server: hr09.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 沪日IEPL传输 Equinix-TY8 B01 Netflix, server: hr11.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 沪日IEPL传输 Equinix-TY8 B02 Netflix, server: hr12.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 沪日IEPL传输 Equinix-TY8 B03 Netflix, server: hr13.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 沪日IEPL传输 Equinix-TY8 B04 Netflix, server: hr14.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 沪日IEPL传输 Equinix-TY8 B05 Netflix, server: hr15.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 沪日IEPL传输 Equinix-TY8 B06 Netflix, server: hr16.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 沪日IEPL传输 Equinix-TY8 B07 Netflix, server: hr17.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 沪日IEPL传输 Equinix-TY8 B08 Netflix, server: hr18.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 沪日IEPL传输 Equinix-TY8 B09 Netflix, server: hr19.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-日本 沪日IEPL传输 Equinix-TY8 B10 Netflix, server: hr10.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-法国 IPLC B01, server: fr01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-法国 IPLC B02, server: fr02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-法国 IPLC B03, server: fr03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-法国 IPLC B04, server: fr04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-法国 IPLC B05, server: fr05.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-澳大利亚 IPLC 悉尼 B01, server: au01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-澳大利亚 IPLC 悉尼 B02, server: au02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-澳大利亚 IPLC 悉尼 B03, server: au03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-澳大利亚 IPLC 悉尼 B04, server: au04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-澳大利亚 IPLC 悉尼 B05, server: au05.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-爱尔兰 IPLC B01, server: ir01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-爱尔兰 IPLC B02, server: ir02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-爱尔兰 IPLC B03, server: ir03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-爱尔兰 IPLC B04, server: ir04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-爱尔兰 IPLC B05, server: ir05.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-英国伦敦电信 IEPL B01, server: uk01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-英国伦敦电信 IEPL B02, server: uk02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-英国伦敦电信 IEPL B03, server: uk03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-英国伦敦电信 IEPL B04, server: uk04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国 IPLC B01 Netflix, server: kr01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国 IPLC B02 Netflix, server: kr02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国 IPLC B03 Netflix, server: kr03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国 IPLC B04 Netflix, server: kr04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国 IPLC B05 Netflix, server: kr05.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国 IPLC B06 Netflix, server: kr06.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国 IPLC B07 Netflix, server: kr07.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国 IPLC B08 Netflix, server: kr08.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国 IPLC B09 Netflix, server: kr09.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国 IPLC B10 Netflix, server: kr10.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国首尔 游戏IEPL B 01 Netflix 原生游戏解锁, server: krgame01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国首尔 游戏IEPL B 02 Netflix 原生游戏解锁, server: krgame02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国首尔 游戏IEPL B 03 Netflix 原生游戏解锁, server: krgame03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国首尔 游戏IEPL B 04 Netflix 原生游戏解锁, server: krgame04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国首尔 游戏IEPL B 05 Netflix 原生游戏解锁, server: krgame05.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国首尔 游戏IEPL B 06 Netflix 原生游戏解锁, server: krgame06.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国首尔 游戏IEPL B 07 Netflix 原生游戏解锁, server: krgame07.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国首尔 游戏IEPL B 08 Netflix 原生游戏解锁, server: krgame08.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国首尔 游戏IEPL B 09 Netflix 原生游戏解锁, server: krgame09.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-韩国首尔 游戏IEPL B 10 Netflix 原生游戏解锁, server: krgame10.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 B 01 1Gbps HBO TVB, server: sg01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 B 02 1Gbps HBO TVB, server: sg02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 B 03 1Gbps HBO TVB, server: sg03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 B 04 1Gbps HBO TVB, server: sg04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 B 05 1Gbps HBO TVB, server: sg05.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 B 06 1Gbps HBO TVB, server: sg06.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 B 07 1Gbps HBO TVB, server: sg07.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 B 08 1Gbps HBO TVB, server: sg08.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 B 09 1Gbps HBO TVB, server: sg09.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 中国-香港 IEPL Equinix HK2 B 10 1Gbps HBO TVB, server: sg10.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 俄罗斯 01, server: ru01.serenazuma.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 俄罗斯 02, server: ru02.serenazuma.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 俄罗斯 03, server: ru03.serenazuma.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 俄罗斯 04, server: ru04.serenazuma.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 因V2ray重大漏洞问题，暂时下架全部V2节点。请使用ssr/ss连接方式进行使用。, server: v2-jp01.serenazuma.com, port: 681, type: vmess, uuid: 98c2ebc0-7eef-3416-886e-92b466cbb43c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: 土耳其, server: trk01.serenazuma.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 巴西, server: br01.serenazuma.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 新加坡 Legacy Magic IEPL 中继 B01 Netflix, server: sgp01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 新加坡 Legacy Magic IEPL 中继 B02 Netflix, server: sgp02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 新加坡 Legacy Magic IEPL 中继 B03 Netflix, server: sgp03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 新加坡 Legacy Magic IEPL 中继 B04 Netflix, server: sgp04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 新加坡 Legacy Magic IEPL 中继 B05 Netflix, server: sgp05.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 新加坡 Magic IEPL 中继 B01 Netflix, server: sgp06.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 新加坡 Magic IEPL 中继 B02 Netflix, server: sgp07.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 新加坡 Magic IEPL 中继 B03 Netflix, server: sgp08.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 新加坡 Magic IEPL 中继 B04 Netflix, server: sgp09.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 新加坡 Magic IEPL 中继 B05 Netflix, server: sgp10.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 新加坡高级 IEPL 中继 B01 Netflix, server: sgp11.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 新加坡高级 IEPL 中继 B02 Netflix, server: sgp12.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 ソフトバンク B01 500Mbps 1x Netflix, server: jp06.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 ソフトバンク B02 500Mbps 1x Netflix, server: jp07.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 ソフトバンク B03 500Mbps 1x Netflix, server: jp08.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 ソフトバンク B04 500Mbps 1x Netflix, server: jp09.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 ソフトバンク B05 500Mbps 1x Netflix, server: jp10.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ B 01, server: jp01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ B 02, server: jp02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ B 03, server: jp03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ B 04, server: jp04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ B 06, server: jp27.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ B 07, server: jp28.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ B 08, server: jp29.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ B 09, server: jp30.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ B 10, server: jp31.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ B 11, server: jp32.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ B 12, server: jp22.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ B 13, server: jp23.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ B 14, server: jp24.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ B 15, server: jp25.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本 まつやまし auひかり ホーム1ギガ B 16, server: jp26.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本大阪 オプテージ B 01, server: jp14.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本大阪 オプテージ B 02, server: jp15.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本大阪 オプテージ B 03, server: jp16.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本大阪 オプテージ B 04, server: jp17.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本大阪 オプテージ B 05, server: jp18.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本大阪 オプテージ B 06, server: jp19.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 日本大阪 オプテージ B 07, server: jp20.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 本站无Ins推广渠道 Ins推广渠道均为二手倒卖, server: 127.0.0.1, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 本站无QQ购买渠道 QQ卖家购买均为二手倒卖, server: 127.0.0.1, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 本站无微信购买渠道 微信购买均为二手倒卖, server: 127.0.0.1, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01, server: hg01.serenazuma.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02, server: hg02.serenazuma.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03, server: hg03.serenazuma.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04, server: hg04.serenazuma.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05, server: hg05.serenazuma.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 游戏 中港 IPLC B01, server: hkgame01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 游戏 中港 IPLC B02, server: hkgame02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 游戏 中港 IPLC B03, server: hkgame03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 游戏 中港 IPLC B04, server: hkgame04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 游戏 中港 IPLC B05, server: hkgame05.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 游戏 中港 IPLC B06, server: hkgame06.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 精简 11, server: 11.sapphirerapids.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 精简 12, server: 12.sapphirerapids.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 精简 13, server: 13.sapphirerapids.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 精简 14, server: 14.sapphirerapids.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 精简 15, server: 15.sapphirerapids.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 精简 16, server: 16.sapphirerapids.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 精简 17, server: 17.sapphirerapids.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 精简 18, server: 18.sapphirerapids.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 精简 19, server: 19.sapphirerapids.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 精简 20, server: 20.sapphirerapids.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 美国实验性 IEPL 中继 B01, server: us06.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 美国实验性 IEPL 中继 B02, server: us07.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 美国实验性 IEPL 中继 B03, server: us08.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 美国实验性 IEPL 中继 B04, server: us09.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 美国实验性 IEPL 中继 B05, server: us10.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 美国高级 IEPL 中继 B01, server: us01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 美国高级 IEPL 中继 B02, server: us02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 美国高级 IEPL 中继 B03, server: us03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 美国高级 IEPL 中继 B04, server: us04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 美国高级 IEPL 中继 B05, server: us05.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 阿根廷, server: agt01.serenazuma.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 集客VPLS/5000Mbps/5000Mbps/上海-(国际)香港 B01, server: hkaia01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 B 01, server: krsk01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 B 02, server: krsk02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 B 03, server: krsk03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 B 04, server: krsk04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 B 05, server: krsk05.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 B 06, server: krsk06.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 B 07, server: krsk07.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 B 08, server: krsk08.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 B 09, server: krsk09.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 韩国 전라북도 전주시 商宽 B 10, server: krsk10.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 香港 油尖旺御金·国峯 網上行寬頻 B01, server: hkt01.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 香港 油尖旺御金·国峯 網上行寬頻 B02, server: hkt02.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 香港 油尖旺御金·国峯 網上行寬頻 B03, server: hkt03.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 香港 油尖旺御金·国峯 網上行寬頻 B04, server: hkt04.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 香港 油尖旺御金·国峯 網上行寬頻 B05, server: hkt05.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 香港 油尖旺御金·国峯 網上行寬頻 B06, server: hkt06.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
+  - {name: 香港 油尖旺御金·国峯 網上行寬頻 B07, server: hkt07.asoulbest.com, port: 31648, type: ss, cipher: rc4-md5, password: zr2ik1d660e, udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V2云香港节点
-      - V2云俄罗斯节点
-      - 日本
-      - (欢迎订阅youtube：8度科技)
-      - (欢迎订阅youtube：8度科技) 2
-      - _US_美国
-      - (欢迎订阅youtube：8度科技) 3
-      - (欢迎订阅youtube：8度科技) 4
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - (欢迎订阅youtube：8度科技) 5
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B01
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B02
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B03
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B04
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B05
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B06
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B07
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B08
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B09
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B10
+      - IPV6接入  HIFI音乐优化
+      - IPV6接入  优化#我编不下去了
+      - IPV6接入 嘉心糖优化#嘉然姫の犬
+      - IPV6接入 摄影优化#忠祥 拍摄超级利器 尼康800定
+      - IPV6接入 未知优化
+      - IPV6接入 标准配置#朦胧幻象
+      - IPV6接入 没有优化
+      - IPV6接入 网课优化#Nuclear 101-核武器设计与制造
+      - IPV6接入 脆鲨优化#YBB APEX日服
+      - IPV6接入 视频优化
+      - IPV6接入 随便瞎优化
+      - 中国-加拿大 IPLC B01
+      - 中国-加拿大 IPLC B02
+      - 中国-加拿大 IPLC B03
+      - 中国-加拿大 IPLC B04
+      - 中国-加拿大 IPLC B05
+      - 中国-印度 IPLC B01 孟买
+      - 中国-印度 IPLC B02 孟买
+      - 中国-印度 IPLC B03 贾坎德
+      - 中国-印度 IPLC B04 贾坎德
+      - 中国-印度 IPLC B05 贾坎德
+      - 中国-印度 IPLC B06 贾坎德
+      - 中国-印度 IPLC B07 泰米尔纳德
+      - 中国-印度 IPLC B08 泰米尔纳德
+      - 中国-台湾IEPL Hinet固接 B01
+      - 中国-台湾IEPL Hinet固接 B02
+      - 中国-台湾IEPL Hinet固接 B03
+      - 中国-台湾IEPL Hinet固接 B04
+      - 中国-台湾IEPL Hinet固接 B05
+      - 中国-台湾IEPL Hinet固接 B06
+      - 中国-台湾IEPL Hinet固接 B07
+      - 中国-台湾IEPL Hinet固接 B08
+      - 中国-台湾IEPL Hinet固接 B09
+      - 中国-台湾嘉义 IPLC B01 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B02 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B03 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B04 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B05 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B06 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B07 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B08 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B09 游戏专线Netflix 动画疯
+      - 中国-台湾高雄 IPLC B01 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B02 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B03 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B04 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B05 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B06 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B07 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B08 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B09 Netflix 动画疯
+      - 中国-日本 多协议标签交换虚拟专用网 B1 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B2 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B3 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B4 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B6 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B7 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B8 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B9 1000Mbps
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B01 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B02 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B03 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B04 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B05 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B06 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B07 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B08 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B09 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B10 Netflix
+      - 中国-法国 IPLC B01
+      - 中国-法国 IPLC B02
+      - 中国-法国 IPLC B03
+      - 中国-法国 IPLC B04
+      - 中国-法国 IPLC B05
+      - 中国-澳大利亚 IPLC 悉尼 B01
+      - 中国-澳大利亚 IPLC 悉尼 B02
+      - 中国-澳大利亚 IPLC 悉尼 B03
+      - 中国-澳大利亚 IPLC 悉尼 B04
+      - 中国-澳大利亚 IPLC 悉尼 B05
+      - 中国-爱尔兰 IPLC B01
+      - 中国-爱尔兰 IPLC B02
+      - 中国-爱尔兰 IPLC B03
+      - 中国-爱尔兰 IPLC B04
+      - 中国-爱尔兰 IPLC B05
+      - 中国-英国伦敦电信 IEPL B01
+      - 中国-英国伦敦电信 IEPL B02
+      - 中国-英国伦敦电信 IEPL B03
+      - 中国-英国伦敦电信 IEPL B04
+      - 中国-韩国 IPLC B01 Netflix
+      - 中国-韩国 IPLC B02 Netflix
+      - 中国-韩国 IPLC B03 Netflix
+      - 中国-韩国 IPLC B04 Netflix
+      - 中国-韩国 IPLC B05 Netflix
+      - 中国-韩国 IPLC B06 Netflix
+      - 中国-韩国 IPLC B07 Netflix
+      - 中国-韩国 IPLC B08 Netflix
+      - 中国-韩国 IPLC B09 Netflix
+      - 中国-韩国 IPLC B10 Netflix
+      - 中国-韩国首尔 游戏IEPL B 01 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 02 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 03 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 04 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 05 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 06 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 07 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 08 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 09 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 10 Netflix 原生游戏解锁
+      - 中国-香港 IEPL Equinix HK2 B 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 02 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 03 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 04 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 06 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 07 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 08 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 09 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 10 1Gbps HBO TVB
+      - 俄罗斯 01
+      - 俄罗斯 02
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 因V2ray重大漏洞问题，暂时下架全部V2节点。请使用ssr/ss连接方式进行使用。
+      - 土耳其
+      - 巴西
+      - 新加坡 Legacy Magic IEPL 中继 B01 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B02 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B03 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B04 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B05 Netflix
+      - 新加坡 Magic IEPL 中继 B01 Netflix
+      - 新加坡 Magic IEPL 中继 B02 Netflix
+      - 新加坡 Magic IEPL 中继 B03 Netflix
+      - 新加坡 Magic IEPL 中继 B04 Netflix
+      - 新加坡 Magic IEPL 中继 B05 Netflix
+      - 新加坡高级 IEPL 中继 B01 Netflix
+      - 新加坡高级 IEPL 中继 B02 Netflix
+      - 日本 ソフトバンク B01 500Mbps 1x Netflix
+      - 日本 ソフトバンク B02 500Mbps 1x Netflix
+      - 日本 ソフトバンク B03 500Mbps 1x Netflix
+      - 日本 ソフトバンク B04 500Mbps 1x Netflix
+      - 日本 ソフトバンク B05 500Mbps 1x Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ B 01
+      - 日本 まつやまし auひかり ホーム1ギガ B 02
+      - 日本 まつやまし auひかり ホーム1ギガ B 03
+      - 日本 まつやまし auひかり ホーム1ギガ B 04
+      - 日本 まつやまし auひかり ホーム1ギガ B 06
+      - 日本 まつやまし auひかり ホーム1ギガ B 07
+      - 日本 まつやまし auひかり ホーム1ギガ B 08
+      - 日本 まつやまし auひかり ホーム1ギガ B 09
+      - 日本 まつやまし auひかり ホーム1ギガ B 10
+      - 日本 まつやまし auひかり ホーム1ギガ B 11
+      - 日本 まつやまし auひかり ホーム1ギガ B 12
+      - 日本 まつやまし auひかり ホーム1ギガ B 13
+      - 日本 まつやまし auひかり ホーム1ギガ B 14
+      - 日本 まつやまし auひかり ホーム1ギガ B 15
+      - 日本 まつやまし auひかり ホーム1ギガ B 16
+      - 日本大阪 オプテージ B 01
+      - 日本大阪 オプテージ B 02
+      - 日本大阪 オプテージ B 03
+      - 日本大阪 オプテージ B 04
+      - 日本大阪 オプテージ B 05
+      - 日本大阪 オプテージ B 06
+      - 日本大阪 オプテージ B 07
+      - 本站无Ins推广渠道 Ins推广渠道均为二手倒卖
+      - 本站无QQ购买渠道 QQ卖家购买均为二手倒卖
+      - 本站无微信购买渠道 微信购买均为二手倒卖
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 游戏 中港 IPLC B01
+      - 游戏 中港 IPLC B02
+      - 游戏 中港 IPLC B03
+      - 游戏 中港 IPLC B04
+      - 游戏 中港 IPLC B05
+      - 游戏 中港 IPLC B06
+      - 精简 11
+      - 精简 12
+      - 精简 13
+      - 精简 14
+      - 精简 15
+      - 精简 16
+      - 精简 17
+      - 精简 18
+      - 精简 19
+      - 精简 20
+      - 美国实验性 IEPL 中继 B01
+      - 美国实验性 IEPL 中继 B02
+      - 美国实验性 IEPL 中继 B03
+      - 美国实验性 IEPL 中继 B04
+      - 美国实验性 IEPL 中继 B05
+      - 美国高级 IEPL 中继 B01
+      - 美国高级 IEPL 中继 B02
+      - 美国高级 IEPL 中继 B03
+      - 美国高级 IEPL 中继 B04
+      - 美国高级 IEPL 中继 B05
+      - 阿根廷
+      - 集客VPLS/5000Mbps/5000Mbps/上海-(国际)香港 B01
+      - 韩国 전라북도 전주시 商宽 B 01
+      - 韩国 전라북도 전주시 商宽 B 02
+      - 韩国 전라북도 전주시 商宽 B 03
+      - 韩国 전라북도 전주시 商宽 B 04
+      - 韩国 전라북도 전주시 商宽 B 05
+      - 韩国 전라북도 전주시 商宽 B 06
+      - 韩国 전라북도 전주시 商宽 B 07
+      - 韩国 전라북도 전주시 商宽 B 08
+      - 韩国 전라북도 전주시 商宽 B 09
+      - 韩国 전라북도 전주시 商宽 B 10
+      - 香港 油尖旺御金·国峯 網上行寬頻 B01
+      - 香港 油尖旺御金·国峯 網上行寬頻 B02
+      - 香港 油尖旺御金·国峯 網上行寬頻 B03
+      - 香港 油尖旺御金·国峯 網上行寬頻 B04
+      - 香港 油尖旺御金·国峯 網上行寬頻 B05
+      - 香港 油尖旺御金·国峯 網上行寬頻 B06
+      - 香港 油尖旺御金·国峯 網上行寬頻 B07
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - V2云香港节点
-      - V2云俄罗斯节点
-      - 日本
-      - (欢迎订阅youtube：8度科技)
-      - (欢迎订阅youtube：8度科技) 2
-      - _US_美国
-      - (欢迎订阅youtube：8度科技) 3
-      - (欢迎订阅youtube：8度科技) 4
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - (欢迎订阅youtube：8度科技) 5
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B01
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B02
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B03
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B04
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B05
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B06
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B07
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B08
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B09
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B10
+      - IPV6接入  HIFI音乐优化
+      - IPV6接入  优化#我编不下去了
+      - IPV6接入 嘉心糖优化#嘉然姫の犬
+      - IPV6接入 摄影优化#忠祥 拍摄超级利器 尼康800定
+      - IPV6接入 未知优化
+      - IPV6接入 标准配置#朦胧幻象
+      - IPV6接入 没有优化
+      - IPV6接入 网课优化#Nuclear 101-核武器设计与制造
+      - IPV6接入 脆鲨优化#YBB APEX日服
+      - IPV6接入 视频优化
+      - IPV6接入 随便瞎优化
+      - 中国-加拿大 IPLC B01
+      - 中国-加拿大 IPLC B02
+      - 中国-加拿大 IPLC B03
+      - 中国-加拿大 IPLC B04
+      - 中国-加拿大 IPLC B05
+      - 中国-印度 IPLC B01 孟买
+      - 中国-印度 IPLC B02 孟买
+      - 中国-印度 IPLC B03 贾坎德
+      - 中国-印度 IPLC B04 贾坎德
+      - 中国-印度 IPLC B05 贾坎德
+      - 中国-印度 IPLC B06 贾坎德
+      - 中国-印度 IPLC B07 泰米尔纳德
+      - 中国-印度 IPLC B08 泰米尔纳德
+      - 中国-台湾IEPL Hinet固接 B01
+      - 中国-台湾IEPL Hinet固接 B02
+      - 中国-台湾IEPL Hinet固接 B03
+      - 中国-台湾IEPL Hinet固接 B04
+      - 中国-台湾IEPL Hinet固接 B05
+      - 中国-台湾IEPL Hinet固接 B06
+      - 中国-台湾IEPL Hinet固接 B07
+      - 中国-台湾IEPL Hinet固接 B08
+      - 中国-台湾IEPL Hinet固接 B09
+      - 中国-台湾嘉义 IPLC B01 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B02 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B03 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B04 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B05 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B06 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B07 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B08 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B09 游戏专线Netflix 动画疯
+      - 中国-台湾高雄 IPLC B01 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B02 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B03 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B04 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B05 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B06 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B07 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B08 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B09 Netflix 动画疯
+      - 中国-日本 多协议标签交换虚拟专用网 B1 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B2 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B3 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B4 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B6 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B7 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B8 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B9 1000Mbps
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B01 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B02 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B03 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B04 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B05 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B06 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B07 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B08 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B09 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B10 Netflix
+      - 中国-法国 IPLC B01
+      - 中国-法国 IPLC B02
+      - 中国-法国 IPLC B03
+      - 中国-法国 IPLC B04
+      - 中国-法国 IPLC B05
+      - 中国-澳大利亚 IPLC 悉尼 B01
+      - 中国-澳大利亚 IPLC 悉尼 B02
+      - 中国-澳大利亚 IPLC 悉尼 B03
+      - 中国-澳大利亚 IPLC 悉尼 B04
+      - 中国-澳大利亚 IPLC 悉尼 B05
+      - 中国-爱尔兰 IPLC B01
+      - 中国-爱尔兰 IPLC B02
+      - 中国-爱尔兰 IPLC B03
+      - 中国-爱尔兰 IPLC B04
+      - 中国-爱尔兰 IPLC B05
+      - 中国-英国伦敦电信 IEPL B01
+      - 中国-英国伦敦电信 IEPL B02
+      - 中国-英国伦敦电信 IEPL B03
+      - 中国-英国伦敦电信 IEPL B04
+      - 中国-韩国 IPLC B01 Netflix
+      - 中国-韩国 IPLC B02 Netflix
+      - 中国-韩国 IPLC B03 Netflix
+      - 中国-韩国 IPLC B04 Netflix
+      - 中国-韩国 IPLC B05 Netflix
+      - 中国-韩国 IPLC B06 Netflix
+      - 中国-韩国 IPLC B07 Netflix
+      - 中国-韩国 IPLC B08 Netflix
+      - 中国-韩国 IPLC B09 Netflix
+      - 中国-韩国 IPLC B10 Netflix
+      - 中国-韩国首尔 游戏IEPL B 01 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 02 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 03 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 04 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 05 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 06 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 07 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 08 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 09 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 10 Netflix 原生游戏解锁
+      - 中国-香港 IEPL Equinix HK2 B 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 02 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 03 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 04 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 06 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 07 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 08 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 09 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 10 1Gbps HBO TVB
+      - 俄罗斯 01
+      - 俄罗斯 02
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 因V2ray重大漏洞问题，暂时下架全部V2节点。请使用ssr/ss连接方式进行使用。
+      - 土耳其
+      - 巴西
+      - 新加坡 Legacy Magic IEPL 中继 B01 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B02 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B03 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B04 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B05 Netflix
+      - 新加坡 Magic IEPL 中继 B01 Netflix
+      - 新加坡 Magic IEPL 中继 B02 Netflix
+      - 新加坡 Magic IEPL 中继 B03 Netflix
+      - 新加坡 Magic IEPL 中继 B04 Netflix
+      - 新加坡 Magic IEPL 中继 B05 Netflix
+      - 新加坡高级 IEPL 中继 B01 Netflix
+      - 新加坡高级 IEPL 中继 B02 Netflix
+      - 日本 ソフトバンク B01 500Mbps 1x Netflix
+      - 日本 ソフトバンク B02 500Mbps 1x Netflix
+      - 日本 ソフトバンク B03 500Mbps 1x Netflix
+      - 日本 ソフトバンク B04 500Mbps 1x Netflix
+      - 日本 ソフトバンク B05 500Mbps 1x Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ B 01
+      - 日本 まつやまし auひかり ホーム1ギガ B 02
+      - 日本 まつやまし auひかり ホーム1ギガ B 03
+      - 日本 まつやまし auひかり ホーム1ギガ B 04
+      - 日本 まつやまし auひかり ホーム1ギガ B 06
+      - 日本 まつやまし auひかり ホーム1ギガ B 07
+      - 日本 まつやまし auひかり ホーム1ギガ B 08
+      - 日本 まつやまし auひかり ホーム1ギガ B 09
+      - 日本 まつやまし auひかり ホーム1ギガ B 10
+      - 日本 まつやまし auひかり ホーム1ギガ B 11
+      - 日本 まつやまし auひかり ホーム1ギガ B 12
+      - 日本 まつやまし auひかり ホーム1ギガ B 13
+      - 日本 まつやまし auひかり ホーム1ギガ B 14
+      - 日本 まつやまし auひかり ホーム1ギガ B 15
+      - 日本 まつやまし auひかり ホーム1ギガ B 16
+      - 日本大阪 オプテージ B 01
+      - 日本大阪 オプテージ B 02
+      - 日本大阪 オプテージ B 03
+      - 日本大阪 オプテージ B 04
+      - 日本大阪 オプテージ B 05
+      - 日本大阪 オプテージ B 06
+      - 日本大阪 オプテージ B 07
+      - 本站无Ins推广渠道 Ins推广渠道均为二手倒卖
+      - 本站无QQ购买渠道 QQ卖家购买均为二手倒卖
+      - 本站无微信购买渠道 微信购买均为二手倒卖
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 游戏 中港 IPLC B01
+      - 游戏 中港 IPLC B02
+      - 游戏 中港 IPLC B03
+      - 游戏 中港 IPLC B04
+      - 游戏 中港 IPLC B05
+      - 游戏 中港 IPLC B06
+      - 精简 11
+      - 精简 12
+      - 精简 13
+      - 精简 14
+      - 精简 15
+      - 精简 16
+      - 精简 17
+      - 精简 18
+      - 精简 19
+      - 精简 20
+      - 美国实验性 IEPL 中继 B01
+      - 美国实验性 IEPL 中继 B02
+      - 美国实验性 IEPL 中继 B03
+      - 美国实验性 IEPL 中继 B04
+      - 美国实验性 IEPL 中继 B05
+      - 美国高级 IEPL 中继 B01
+      - 美国高级 IEPL 中继 B02
+      - 美国高级 IEPL 中继 B03
+      - 美国高级 IEPL 中继 B04
+      - 美国高级 IEPL 中继 B05
+      - 阿根廷
+      - 集客VPLS/5000Mbps/5000Mbps/上海-(国际)香港 B01
+      - 韩国 전라북도 전주시 商宽 B 01
+      - 韩国 전라북도 전주시 商宽 B 02
+      - 韩国 전라북도 전주시 商宽 B 03
+      - 韩国 전라북도 전주시 商宽 B 04
+      - 韩国 전라북도 전주시 商宽 B 05
+      - 韩国 전라북도 전주시 商宽 B 06
+      - 韩国 전라북도 전주시 商宽 B 07
+      - 韩国 전라북도 전주시 商宽 B 08
+      - 韩国 전라북도 전주시 商宽 B 09
+      - 韩国 전라북도 전주시 商宽 B 10
+      - 香港 油尖旺御金·国峯 網上行寬頻 B01
+      - 香港 油尖旺御金·国峯 網上行寬頻 B02
+      - 香港 油尖旺御金·国峯 網上行寬頻 B03
+      - 香港 油尖旺御金·国峯 網上行寬頻 B04
+      - 香港 油尖旺御金·国峯 網上行寬頻 B05
+      - 香港 油尖旺御金·国峯 網上行寬頻 B06
+      - 香港 油尖旺御金·国峯 網上行寬頻 B07
   - name: 🎥 NETFLIX
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V2云香港节点
-      - V2云俄罗斯节点
-      - 日本
-      - (欢迎订阅youtube：8度科技)
-      - (欢迎订阅youtube：8度科技) 2
-      - _US_美国
-      - (欢迎订阅youtube：8度科技) 3
-      - (欢迎订阅youtube：8度科技) 4
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - (欢迎订阅youtube：8度科技) 5
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B01
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B02
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B03
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B04
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B05
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B06
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B07
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B08
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B09
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B10
+      - IPV6接入  HIFI音乐优化
+      - IPV6接入  优化#我编不下去了
+      - IPV6接入 嘉心糖优化#嘉然姫の犬
+      - IPV6接入 摄影优化#忠祥 拍摄超级利器 尼康800定
+      - IPV6接入 未知优化
+      - IPV6接入 标准配置#朦胧幻象
+      - IPV6接入 没有优化
+      - IPV6接入 网课优化#Nuclear 101-核武器设计与制造
+      - IPV6接入 脆鲨优化#YBB APEX日服
+      - IPV6接入 视频优化
+      - IPV6接入 随便瞎优化
+      - 中国-加拿大 IPLC B01
+      - 中国-加拿大 IPLC B02
+      - 中国-加拿大 IPLC B03
+      - 中国-加拿大 IPLC B04
+      - 中国-加拿大 IPLC B05
+      - 中国-印度 IPLC B01 孟买
+      - 中国-印度 IPLC B02 孟买
+      - 中国-印度 IPLC B03 贾坎德
+      - 中国-印度 IPLC B04 贾坎德
+      - 中国-印度 IPLC B05 贾坎德
+      - 中国-印度 IPLC B06 贾坎德
+      - 中国-印度 IPLC B07 泰米尔纳德
+      - 中国-印度 IPLC B08 泰米尔纳德
+      - 中国-台湾IEPL Hinet固接 B01
+      - 中国-台湾IEPL Hinet固接 B02
+      - 中国-台湾IEPL Hinet固接 B03
+      - 中国-台湾IEPL Hinet固接 B04
+      - 中国-台湾IEPL Hinet固接 B05
+      - 中国-台湾IEPL Hinet固接 B06
+      - 中国-台湾IEPL Hinet固接 B07
+      - 中国-台湾IEPL Hinet固接 B08
+      - 中国-台湾IEPL Hinet固接 B09
+      - 中国-台湾嘉义 IPLC B01 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B02 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B03 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B04 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B05 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B06 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B07 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B08 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B09 游戏专线Netflix 动画疯
+      - 中国-台湾高雄 IPLC B01 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B02 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B03 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B04 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B05 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B06 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B07 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B08 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B09 Netflix 动画疯
+      - 中国-日本 多协议标签交换虚拟专用网 B1 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B2 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B3 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B4 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B6 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B7 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B8 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B9 1000Mbps
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B01 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B02 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B03 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B04 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B05 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B06 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B07 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B08 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B09 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B10 Netflix
+      - 中国-法国 IPLC B01
+      - 中国-法国 IPLC B02
+      - 中国-法国 IPLC B03
+      - 中国-法国 IPLC B04
+      - 中国-法国 IPLC B05
+      - 中国-澳大利亚 IPLC 悉尼 B01
+      - 中国-澳大利亚 IPLC 悉尼 B02
+      - 中国-澳大利亚 IPLC 悉尼 B03
+      - 中国-澳大利亚 IPLC 悉尼 B04
+      - 中国-澳大利亚 IPLC 悉尼 B05
+      - 中国-爱尔兰 IPLC B01
+      - 中国-爱尔兰 IPLC B02
+      - 中国-爱尔兰 IPLC B03
+      - 中国-爱尔兰 IPLC B04
+      - 中国-爱尔兰 IPLC B05
+      - 中国-英国伦敦电信 IEPL B01
+      - 中国-英国伦敦电信 IEPL B02
+      - 中国-英国伦敦电信 IEPL B03
+      - 中国-英国伦敦电信 IEPL B04
+      - 中国-韩国 IPLC B01 Netflix
+      - 中国-韩国 IPLC B02 Netflix
+      - 中国-韩国 IPLC B03 Netflix
+      - 中国-韩国 IPLC B04 Netflix
+      - 中国-韩国 IPLC B05 Netflix
+      - 中国-韩国 IPLC B06 Netflix
+      - 中国-韩国 IPLC B07 Netflix
+      - 中国-韩国 IPLC B08 Netflix
+      - 中国-韩国 IPLC B09 Netflix
+      - 中国-韩国 IPLC B10 Netflix
+      - 中国-韩国首尔 游戏IEPL B 01 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 02 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 03 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 04 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 05 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 06 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 07 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 08 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 09 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 10 Netflix 原生游戏解锁
+      - 中国-香港 IEPL Equinix HK2 B 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 02 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 03 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 04 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 06 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 07 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 08 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 09 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 10 1Gbps HBO TVB
+      - 俄罗斯 01
+      - 俄罗斯 02
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 因V2ray重大漏洞问题，暂时下架全部V2节点。请使用ssr/ss连接方式进行使用。
+      - 土耳其
+      - 巴西
+      - 新加坡 Legacy Magic IEPL 中继 B01 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B02 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B03 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B04 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B05 Netflix
+      - 新加坡 Magic IEPL 中继 B01 Netflix
+      - 新加坡 Magic IEPL 中继 B02 Netflix
+      - 新加坡 Magic IEPL 中继 B03 Netflix
+      - 新加坡 Magic IEPL 中继 B04 Netflix
+      - 新加坡 Magic IEPL 中继 B05 Netflix
+      - 新加坡高级 IEPL 中继 B01 Netflix
+      - 新加坡高级 IEPL 中继 B02 Netflix
+      - 日本 ソフトバンク B01 500Mbps 1x Netflix
+      - 日本 ソフトバンク B02 500Mbps 1x Netflix
+      - 日本 ソフトバンク B03 500Mbps 1x Netflix
+      - 日本 ソフトバンク B04 500Mbps 1x Netflix
+      - 日本 ソフトバンク B05 500Mbps 1x Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ B 01
+      - 日本 まつやまし auひかり ホーム1ギガ B 02
+      - 日本 まつやまし auひかり ホーム1ギガ B 03
+      - 日本 まつやまし auひかり ホーム1ギガ B 04
+      - 日本 まつやまし auひかり ホーム1ギガ B 06
+      - 日本 まつやまし auひかり ホーム1ギガ B 07
+      - 日本 まつやまし auひかり ホーム1ギガ B 08
+      - 日本 まつやまし auひかり ホーム1ギガ B 09
+      - 日本 まつやまし auひかり ホーム1ギガ B 10
+      - 日本 まつやまし auひかり ホーム1ギガ B 11
+      - 日本 まつやまし auひかり ホーム1ギガ B 12
+      - 日本 まつやまし auひかり ホーム1ギガ B 13
+      - 日本 まつやまし auひかり ホーム1ギガ B 14
+      - 日本 まつやまし auひかり ホーム1ギガ B 15
+      - 日本 まつやまし auひかり ホーム1ギガ B 16
+      - 日本大阪 オプテージ B 01
+      - 日本大阪 オプテージ B 02
+      - 日本大阪 オプテージ B 03
+      - 日本大阪 オプテージ B 04
+      - 日本大阪 オプテージ B 05
+      - 日本大阪 オプテージ B 06
+      - 日本大阪 オプテージ B 07
+      - 本站无Ins推广渠道 Ins推广渠道均为二手倒卖
+      - 本站无QQ购买渠道 QQ卖家购买均为二手倒卖
+      - 本站无微信购买渠道 微信购买均为二手倒卖
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 游戏 中港 IPLC B01
+      - 游戏 中港 IPLC B02
+      - 游戏 中港 IPLC B03
+      - 游戏 中港 IPLC B04
+      - 游戏 中港 IPLC B05
+      - 游戏 中港 IPLC B06
+      - 精简 11
+      - 精简 12
+      - 精简 13
+      - 精简 14
+      - 精简 15
+      - 精简 16
+      - 精简 17
+      - 精简 18
+      - 精简 19
+      - 精简 20
+      - 美国实验性 IEPL 中继 B01
+      - 美国实验性 IEPL 中继 B02
+      - 美国实验性 IEPL 中继 B03
+      - 美国实验性 IEPL 中继 B04
+      - 美国实验性 IEPL 中继 B05
+      - 美国高级 IEPL 中继 B01
+      - 美国高级 IEPL 中继 B02
+      - 美国高级 IEPL 中继 B03
+      - 美国高级 IEPL 中继 B04
+      - 美国高级 IEPL 中继 B05
+      - 阿根廷
+      - 集客VPLS/5000Mbps/5000Mbps/上海-(国际)香港 B01
+      - 韩国 전라북도 전주시 商宽 B 01
+      - 韩国 전라북도 전주시 商宽 B 02
+      - 韩国 전라북도 전주시 商宽 B 03
+      - 韩国 전라북도 전주시 商宽 B 04
+      - 韩国 전라북도 전주시 商宽 B 05
+      - 韩国 전라북도 전주시 商宽 B 06
+      - 韩国 전라북도 전주시 商宽 B 07
+      - 韩国 전라북도 전주시 商宽 B 08
+      - 韩国 전라북도 전주시 商宽 B 09
+      - 韩国 전라북도 전주시 商宽 B 10
+      - 香港 油尖旺御金·国峯 網上行寬頻 B01
+      - 香港 油尖旺御金·国峯 網上行寬頻 B02
+      - 香港 油尖旺御金·国峯 網上行寬頻 B03
+      - 香港 油尖旺御金·国峯 網上行寬頻 B04
+      - 香港 油尖旺御金·国峯 網上行寬頻 B05
+      - 香港 油尖旺御金·国峯 網上行寬頻 B06
+      - 香港 油尖旺御金·国峯 網上行寬頻 B07
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -88,76 +948,991 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - V2云香港节点
-      - V2云俄罗斯节点
-      - 日本
-      - (欢迎订阅youtube：8度科技)
-      - (欢迎订阅youtube：8度科技) 2
-      - _US_美国
-      - (欢迎订阅youtube：8度科技) 3
-      - (欢迎订阅youtube：8度科技) 4
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - (欢迎订阅youtube：8度科技) 5
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B01
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B02
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B03
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B04
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B05
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B06
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B07
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B08
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B09
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B10
+      - IPV6接入  HIFI音乐优化
+      - IPV6接入  优化#我编不下去了
+      - IPV6接入 嘉心糖优化#嘉然姫の犬
+      - IPV6接入 摄影优化#忠祥 拍摄超级利器 尼康800定
+      - IPV6接入 未知优化
+      - IPV6接入 标准配置#朦胧幻象
+      - IPV6接入 没有优化
+      - IPV6接入 网课优化#Nuclear 101-核武器设计与制造
+      - IPV6接入 脆鲨优化#YBB APEX日服
+      - IPV6接入 视频优化
+      - IPV6接入 随便瞎优化
+      - 中国-加拿大 IPLC B01
+      - 中国-加拿大 IPLC B02
+      - 中国-加拿大 IPLC B03
+      - 中国-加拿大 IPLC B04
+      - 中国-加拿大 IPLC B05
+      - 中国-印度 IPLC B01 孟买
+      - 中国-印度 IPLC B02 孟买
+      - 中国-印度 IPLC B03 贾坎德
+      - 中国-印度 IPLC B04 贾坎德
+      - 中国-印度 IPLC B05 贾坎德
+      - 中国-印度 IPLC B06 贾坎德
+      - 中国-印度 IPLC B07 泰米尔纳德
+      - 中国-印度 IPLC B08 泰米尔纳德
+      - 中国-台湾IEPL Hinet固接 B01
+      - 中国-台湾IEPL Hinet固接 B02
+      - 中国-台湾IEPL Hinet固接 B03
+      - 中国-台湾IEPL Hinet固接 B04
+      - 中国-台湾IEPL Hinet固接 B05
+      - 中国-台湾IEPL Hinet固接 B06
+      - 中国-台湾IEPL Hinet固接 B07
+      - 中国-台湾IEPL Hinet固接 B08
+      - 中国-台湾IEPL Hinet固接 B09
+      - 中国-台湾嘉义 IPLC B01 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B02 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B03 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B04 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B05 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B06 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B07 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B08 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B09 游戏专线Netflix 动画疯
+      - 中国-台湾高雄 IPLC B01 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B02 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B03 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B04 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B05 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B06 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B07 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B08 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B09 Netflix 动画疯
+      - 中国-日本 多协议标签交换虚拟专用网 B1 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B2 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B3 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B4 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B6 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B7 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B8 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B9 1000Mbps
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B01 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B02 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B03 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B04 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B05 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B06 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B07 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B08 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B09 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B10 Netflix
+      - 中国-法国 IPLC B01
+      - 中国-法国 IPLC B02
+      - 中国-法国 IPLC B03
+      - 中国-法国 IPLC B04
+      - 中国-法国 IPLC B05
+      - 中国-澳大利亚 IPLC 悉尼 B01
+      - 中国-澳大利亚 IPLC 悉尼 B02
+      - 中国-澳大利亚 IPLC 悉尼 B03
+      - 中国-澳大利亚 IPLC 悉尼 B04
+      - 中国-澳大利亚 IPLC 悉尼 B05
+      - 中国-爱尔兰 IPLC B01
+      - 中国-爱尔兰 IPLC B02
+      - 中国-爱尔兰 IPLC B03
+      - 中国-爱尔兰 IPLC B04
+      - 中国-爱尔兰 IPLC B05
+      - 中国-英国伦敦电信 IEPL B01
+      - 中国-英国伦敦电信 IEPL B02
+      - 中国-英国伦敦电信 IEPL B03
+      - 中国-英国伦敦电信 IEPL B04
+      - 中国-韩国 IPLC B01 Netflix
+      - 中国-韩国 IPLC B02 Netflix
+      - 中国-韩国 IPLC B03 Netflix
+      - 中国-韩国 IPLC B04 Netflix
+      - 中国-韩国 IPLC B05 Netflix
+      - 中国-韩国 IPLC B06 Netflix
+      - 中国-韩国 IPLC B07 Netflix
+      - 中国-韩国 IPLC B08 Netflix
+      - 中国-韩国 IPLC B09 Netflix
+      - 中国-韩国 IPLC B10 Netflix
+      - 中国-韩国首尔 游戏IEPL B 01 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 02 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 03 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 04 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 05 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 06 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 07 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 08 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 09 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 10 Netflix 原生游戏解锁
+      - 中国-香港 IEPL Equinix HK2 B 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 02 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 03 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 04 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 06 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 07 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 08 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 09 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 10 1Gbps HBO TVB
+      - 俄罗斯 01
+      - 俄罗斯 02
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 因V2ray重大漏洞问题，暂时下架全部V2节点。请使用ssr/ss连接方式进行使用。
+      - 土耳其
+      - 巴西
+      - 新加坡 Legacy Magic IEPL 中继 B01 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B02 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B03 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B04 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B05 Netflix
+      - 新加坡 Magic IEPL 中继 B01 Netflix
+      - 新加坡 Magic IEPL 中继 B02 Netflix
+      - 新加坡 Magic IEPL 中继 B03 Netflix
+      - 新加坡 Magic IEPL 中继 B04 Netflix
+      - 新加坡 Magic IEPL 中继 B05 Netflix
+      - 新加坡高级 IEPL 中继 B01 Netflix
+      - 新加坡高级 IEPL 中继 B02 Netflix
+      - 日本 ソフトバンク B01 500Mbps 1x Netflix
+      - 日本 ソフトバンク B02 500Mbps 1x Netflix
+      - 日本 ソフトバンク B03 500Mbps 1x Netflix
+      - 日本 ソフトバンク B04 500Mbps 1x Netflix
+      - 日本 ソフトバンク B05 500Mbps 1x Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ B 01
+      - 日本 まつやまし auひかり ホーム1ギガ B 02
+      - 日本 まつやまし auひかり ホーム1ギガ B 03
+      - 日本 まつやまし auひかり ホーム1ギガ B 04
+      - 日本 まつやまし auひかり ホーム1ギガ B 06
+      - 日本 まつやまし auひかり ホーム1ギガ B 07
+      - 日本 まつやまし auひかり ホーム1ギガ B 08
+      - 日本 まつやまし auひかり ホーム1ギガ B 09
+      - 日本 まつやまし auひかり ホーム1ギガ B 10
+      - 日本 まつやまし auひかり ホーム1ギガ B 11
+      - 日本 まつやまし auひかり ホーム1ギガ B 12
+      - 日本 まつやまし auひかり ホーム1ギガ B 13
+      - 日本 まつやまし auひかり ホーム1ギガ B 14
+      - 日本 まつやまし auひかり ホーム1ギガ B 15
+      - 日本 まつやまし auひかり ホーム1ギガ B 16
+      - 日本大阪 オプテージ B 01
+      - 日本大阪 オプテージ B 02
+      - 日本大阪 オプテージ B 03
+      - 日本大阪 オプテージ B 04
+      - 日本大阪 オプテージ B 05
+      - 日本大阪 オプテージ B 06
+      - 日本大阪 オプテージ B 07
+      - 本站无Ins推广渠道 Ins推广渠道均为二手倒卖
+      - 本站无QQ购买渠道 QQ卖家购买均为二手倒卖
+      - 本站无微信购买渠道 微信购买均为二手倒卖
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 游戏 中港 IPLC B01
+      - 游戏 中港 IPLC B02
+      - 游戏 中港 IPLC B03
+      - 游戏 中港 IPLC B04
+      - 游戏 中港 IPLC B05
+      - 游戏 中港 IPLC B06
+      - 精简 11
+      - 精简 12
+      - 精简 13
+      - 精简 14
+      - 精简 15
+      - 精简 16
+      - 精简 17
+      - 精简 18
+      - 精简 19
+      - 精简 20
+      - 美国实验性 IEPL 中继 B01
+      - 美国实验性 IEPL 中继 B02
+      - 美国实验性 IEPL 中继 B03
+      - 美国实验性 IEPL 中继 B04
+      - 美国实验性 IEPL 中继 B05
+      - 美国高级 IEPL 中继 B01
+      - 美国高级 IEPL 中继 B02
+      - 美国高级 IEPL 中继 B03
+      - 美国高级 IEPL 中继 B04
+      - 美国高级 IEPL 中继 B05
+      - 阿根廷
+      - 集客VPLS/5000Mbps/5000Mbps/上海-(国际)香港 B01
+      - 韩国 전라북도 전주시 商宽 B 01
+      - 韩国 전라북도 전주시 商宽 B 02
+      - 韩国 전라북도 전주시 商宽 B 03
+      - 韩国 전라북도 전주시 商宽 B 04
+      - 韩国 전라북도 전주시 商宽 B 05
+      - 韩国 전라북도 전주시 商宽 B 06
+      - 韩国 전라북도 전주시 商宽 B 07
+      - 韩国 전라북도 전주시 商宽 B 08
+      - 韩国 전라북도 전주시 商宽 B 09
+      - 韩国 전라북도 전주시 商宽 B 10
+      - 香港 油尖旺御金·国峯 網上行寬頻 B01
+      - 香港 油尖旺御金·国峯 網上行寬頻 B02
+      - 香港 油尖旺御金·国峯 網上行寬頻 B03
+      - 香港 油尖旺御金·国峯 網上行寬頻 B04
+      - 香港 油尖旺御金·国峯 網上行寬頻 B05
+      - 香港 油尖旺御金·国峯 網上行寬頻 B06
+      - 香港 油尖旺御金·国峯 網上行寬頻 B07
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - V2云香港节点
+      - 中国-台湾IEPL Hinet固接 B01
+      - 中国-台湾IEPL Hinet固接 B02
+      - 中国-台湾IEPL Hinet固接 B03
+      - 中国-台湾IEPL Hinet固接 B04
+      - 中国-台湾IEPL Hinet固接 B05
+      - 中国-台湾IEPL Hinet固接 B06
+      - 中国-台湾IEPL Hinet固接 B07
+      - 中国-台湾IEPL Hinet固接 B08
+      - 中国-台湾IEPL Hinet固接 B09
+      - 中国-台湾嘉义 IPLC B01 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B02 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B03 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B04 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B05 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B06 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B07 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B08 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B09 游戏专线Netflix 动画疯
+      - 中国-台湾高雄 IPLC B01 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B02 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B03 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B04 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B05 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B06 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B07 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B08 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B09 Netflix 动画疯
+      - 中国-香港 IEPL Equinix HK2 B 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 02 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 03 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 04 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 06 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 07 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 08 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 09 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 10 1Gbps HBO TVB
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 游戏 中港 IPLC B01
+      - 游戏 中港 IPLC B02
+      - 游戏 中港 IPLC B03
+      - 游戏 中港 IPLC B04
+      - 游戏 中港 IPLC B05
+      - 游戏 中港 IPLC B06
+      - 集客VPLS/5000Mbps/5000Mbps/上海-(国际)香港 B01
+      - 香港 油尖旺御金·国峯 網上行寬頻 B01
+      - 香港 油尖旺御金·国峯 網上行寬頻 B02
+      - 香港 油尖旺御金·国峯 網上行寬頻 B03
+      - 香港 油尖旺御金·国峯 網上行寬頻 B04
+      - 香港 油尖旺御金·国峯 網上行寬頻 B05
+      - 香港 油尖旺御金·国峯 網上行寬頻 B06
+      - 香港 油尖旺御金·国峯 網上行寬頻 B07
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - V2云香港节点
-      - V2云俄罗斯节点
-      - 日本
-      - (欢迎订阅youtube：8度科技)
-      - (欢迎订阅youtube：8度科技) 2
-      - _US_美国
-      - (欢迎订阅youtube：8度科技) 3
-      - (欢迎订阅youtube：8度科技) 4
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - (欢迎订阅youtube：8度科技) 5
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B01
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B02
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B03
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B04
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B05
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B06
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B07
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B08
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B09
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B10
+      - IPV6接入  HIFI音乐优化
+      - IPV6接入  优化#我编不下去了
+      - IPV6接入 嘉心糖优化#嘉然姫の犬
+      - IPV6接入 摄影优化#忠祥 拍摄超级利器 尼康800定
+      - IPV6接入 未知优化
+      - IPV6接入 标准配置#朦胧幻象
+      - IPV6接入 没有优化
+      - IPV6接入 网课优化#Nuclear 101-核武器设计与制造
+      - IPV6接入 脆鲨优化#YBB APEX日服
+      - IPV6接入 视频优化
+      - IPV6接入 随便瞎优化
+      - 中国-加拿大 IPLC B01
+      - 中国-加拿大 IPLC B02
+      - 中国-加拿大 IPLC B03
+      - 中国-加拿大 IPLC B04
+      - 中国-加拿大 IPLC B05
+      - 中国-印度 IPLC B01 孟买
+      - 中国-印度 IPLC B02 孟买
+      - 中国-印度 IPLC B03 贾坎德
+      - 中国-印度 IPLC B04 贾坎德
+      - 中国-印度 IPLC B05 贾坎德
+      - 中国-印度 IPLC B06 贾坎德
+      - 中国-印度 IPLC B07 泰米尔纳德
+      - 中国-印度 IPLC B08 泰米尔纳德
+      - 中国-台湾IEPL Hinet固接 B01
+      - 中国-台湾IEPL Hinet固接 B02
+      - 中国-台湾IEPL Hinet固接 B03
+      - 中国-台湾IEPL Hinet固接 B04
+      - 中国-台湾IEPL Hinet固接 B05
+      - 中国-台湾IEPL Hinet固接 B06
+      - 中国-台湾IEPL Hinet固接 B07
+      - 中国-台湾IEPL Hinet固接 B08
+      - 中国-台湾IEPL Hinet固接 B09
+      - 中国-台湾嘉义 IPLC B01 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B02 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B03 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B04 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B05 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B06 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B07 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B08 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B09 游戏专线Netflix 动画疯
+      - 中国-台湾高雄 IPLC B01 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B02 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B03 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B04 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B05 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B06 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B07 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B08 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B09 Netflix 动画疯
+      - 中国-日本 多协议标签交换虚拟专用网 B1 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B2 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B3 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B4 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B6 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B7 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B8 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B9 1000Mbps
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B01 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B02 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B03 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B04 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B05 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B06 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B07 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B08 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B09 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B10 Netflix
+      - 中国-法国 IPLC B01
+      - 中国-法国 IPLC B02
+      - 中国-法国 IPLC B03
+      - 中国-法国 IPLC B04
+      - 中国-法国 IPLC B05
+      - 中国-澳大利亚 IPLC 悉尼 B01
+      - 中国-澳大利亚 IPLC 悉尼 B02
+      - 中国-澳大利亚 IPLC 悉尼 B03
+      - 中国-澳大利亚 IPLC 悉尼 B04
+      - 中国-澳大利亚 IPLC 悉尼 B05
+      - 中国-爱尔兰 IPLC B01
+      - 中国-爱尔兰 IPLC B02
+      - 中国-爱尔兰 IPLC B03
+      - 中国-爱尔兰 IPLC B04
+      - 中国-爱尔兰 IPLC B05
+      - 中国-英国伦敦电信 IEPL B01
+      - 中国-英国伦敦电信 IEPL B02
+      - 中国-英国伦敦电信 IEPL B03
+      - 中国-英国伦敦电信 IEPL B04
+      - 中国-韩国 IPLC B01 Netflix
+      - 中国-韩国 IPLC B02 Netflix
+      - 中国-韩国 IPLC B03 Netflix
+      - 中国-韩国 IPLC B04 Netflix
+      - 中国-韩国 IPLC B05 Netflix
+      - 中国-韩国 IPLC B06 Netflix
+      - 中国-韩国 IPLC B07 Netflix
+      - 中国-韩国 IPLC B08 Netflix
+      - 中国-韩国 IPLC B09 Netflix
+      - 中国-韩国 IPLC B10 Netflix
+      - 中国-韩国首尔 游戏IEPL B 01 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 02 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 03 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 04 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 05 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 06 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 07 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 08 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 09 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 10 Netflix 原生游戏解锁
+      - 中国-香港 IEPL Equinix HK2 B 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 02 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 03 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 04 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 06 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 07 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 08 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 09 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 10 1Gbps HBO TVB
+      - 俄罗斯 01
+      - 俄罗斯 02
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 因V2ray重大漏洞问题，暂时下架全部V2节点。请使用ssr/ss连接方式进行使用。
+      - 土耳其
+      - 巴西
+      - 新加坡 Legacy Magic IEPL 中继 B01 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B02 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B03 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B04 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B05 Netflix
+      - 新加坡 Magic IEPL 中继 B01 Netflix
+      - 新加坡 Magic IEPL 中继 B02 Netflix
+      - 新加坡 Magic IEPL 中继 B03 Netflix
+      - 新加坡 Magic IEPL 中继 B04 Netflix
+      - 新加坡 Magic IEPL 中继 B05 Netflix
+      - 新加坡高级 IEPL 中继 B01 Netflix
+      - 新加坡高级 IEPL 中继 B02 Netflix
+      - 日本 ソフトバンク B01 500Mbps 1x Netflix
+      - 日本 ソフトバンク B02 500Mbps 1x Netflix
+      - 日本 ソフトバンク B03 500Mbps 1x Netflix
+      - 日本 ソフトバンク B04 500Mbps 1x Netflix
+      - 日本 ソフトバンク B05 500Mbps 1x Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ B 01
+      - 日本 まつやまし auひかり ホーム1ギガ B 02
+      - 日本 まつやまし auひかり ホーム1ギガ B 03
+      - 日本 まつやまし auひかり ホーム1ギガ B 04
+      - 日本 まつやまし auひかり ホーム1ギガ B 06
+      - 日本 まつやまし auひかり ホーム1ギガ B 07
+      - 日本 まつやまし auひかり ホーム1ギガ B 08
+      - 日本 まつやまし auひかり ホーム1ギガ B 09
+      - 日本 まつやまし auひかり ホーム1ギガ B 10
+      - 日本 まつやまし auひかり ホーム1ギガ B 11
+      - 日本 まつやまし auひかり ホーム1ギガ B 12
+      - 日本 まつやまし auひかり ホーム1ギガ B 13
+      - 日本 まつやまし auひかり ホーム1ギガ B 14
+      - 日本 まつやまし auひかり ホーム1ギガ B 15
+      - 日本 まつやまし auひかり ホーム1ギガ B 16
+      - 日本大阪 オプテージ B 01
+      - 日本大阪 オプテージ B 02
+      - 日本大阪 オプテージ B 03
+      - 日本大阪 オプテージ B 04
+      - 日本大阪 オプテージ B 05
+      - 日本大阪 オプテージ B 06
+      - 日本大阪 オプテージ B 07
+      - 本站无Ins推广渠道 Ins推广渠道均为二手倒卖
+      - 本站无QQ购买渠道 QQ卖家购买均为二手倒卖
+      - 本站无微信购买渠道 微信购买均为二手倒卖
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 游戏 中港 IPLC B01
+      - 游戏 中港 IPLC B02
+      - 游戏 中港 IPLC B03
+      - 游戏 中港 IPLC B04
+      - 游戏 中港 IPLC B05
+      - 游戏 中港 IPLC B06
+      - 精简 11
+      - 精简 12
+      - 精简 13
+      - 精简 14
+      - 精简 15
+      - 精简 16
+      - 精简 17
+      - 精简 18
+      - 精简 19
+      - 精简 20
+      - 美国实验性 IEPL 中继 B01
+      - 美国实验性 IEPL 中继 B02
+      - 美国实验性 IEPL 中继 B03
+      - 美国实验性 IEPL 中继 B04
+      - 美国实验性 IEPL 中继 B05
+      - 美国高级 IEPL 中继 B01
+      - 美国高级 IEPL 中继 B02
+      - 美国高级 IEPL 中继 B03
+      - 美国高级 IEPL 中继 B04
+      - 美国高级 IEPL 中继 B05
+      - 阿根廷
+      - 集客VPLS/5000Mbps/5000Mbps/上海-(国际)香港 B01
+      - 韩国 전라북도 전주시 商宽 B 01
+      - 韩国 전라북도 전주시 商宽 B 02
+      - 韩国 전라북도 전주시 商宽 B 03
+      - 韩国 전라북도 전주시 商宽 B 04
+      - 韩国 전라북도 전주시 商宽 B 05
+      - 韩国 전라북도 전주시 商宽 B 06
+      - 韩国 전라북도 전주시 商宽 B 07
+      - 韩国 전라북도 전주시 商宽 B 08
+      - 韩国 전라북도 전주시 商宽 B 09
+      - 韩国 전라북도 전주시 商宽 B 10
+      - 香港 油尖旺御金·国峯 網上行寬頻 B01
+      - 香港 油尖旺御金·国峯 網上行寬頻 B02
+      - 香港 油尖旺御金·国峯 網上行寬頻 B03
+      - 香港 油尖旺御金·国峯 網上行寬頻 B04
+      - 香港 油尖旺御金·国峯 網上行寬頻 B05
+      - 香港 油尖旺御金·国峯 網上行寬頻 B06
+      - 香港 油尖旺御金·国峯 網上行寬頻 B07
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - V2云香港节点
-      - V2云俄罗斯节点
-      - 日本
-      - (欢迎订阅youtube：8度科技)
-      - (欢迎订阅youtube：8度科技) 2
-      - _US_美国
-      - (欢迎订阅youtube：8度科技) 3
-      - (欢迎订阅youtube：8度科技) 4
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - (欢迎订阅youtube：8度科技) 5
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B01
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B02
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B03
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B04
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B05
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B06
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B07
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B08
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B09
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B10
+      - IPV6接入  HIFI音乐优化
+      - IPV6接入  优化#我编不下去了
+      - IPV6接入 嘉心糖优化#嘉然姫の犬
+      - IPV6接入 摄影优化#忠祥 拍摄超级利器 尼康800定
+      - IPV6接入 未知优化
+      - IPV6接入 标准配置#朦胧幻象
+      - IPV6接入 没有优化
+      - IPV6接入 网课优化#Nuclear 101-核武器设计与制造
+      - IPV6接入 脆鲨优化#YBB APEX日服
+      - IPV6接入 视频优化
+      - IPV6接入 随便瞎优化
+      - 中国-加拿大 IPLC B01
+      - 中国-加拿大 IPLC B02
+      - 中国-加拿大 IPLC B03
+      - 中国-加拿大 IPLC B04
+      - 中国-加拿大 IPLC B05
+      - 中国-印度 IPLC B01 孟买
+      - 中国-印度 IPLC B02 孟买
+      - 中国-印度 IPLC B03 贾坎德
+      - 中国-印度 IPLC B04 贾坎德
+      - 中国-印度 IPLC B05 贾坎德
+      - 中国-印度 IPLC B06 贾坎德
+      - 中国-印度 IPLC B07 泰米尔纳德
+      - 中国-印度 IPLC B08 泰米尔纳德
+      - 中国-台湾IEPL Hinet固接 B01
+      - 中国-台湾IEPL Hinet固接 B02
+      - 中国-台湾IEPL Hinet固接 B03
+      - 中国-台湾IEPL Hinet固接 B04
+      - 中国-台湾IEPL Hinet固接 B05
+      - 中国-台湾IEPL Hinet固接 B06
+      - 中国-台湾IEPL Hinet固接 B07
+      - 中国-台湾IEPL Hinet固接 B08
+      - 中国-台湾IEPL Hinet固接 B09
+      - 中国-台湾嘉义 IPLC B01 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B02 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B03 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B04 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B05 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B06 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B07 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B08 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B09 游戏专线Netflix 动画疯
+      - 中国-台湾高雄 IPLC B01 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B02 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B03 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B04 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B05 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B06 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B07 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B08 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B09 Netflix 动画疯
+      - 中国-日本 多协议标签交换虚拟专用网 B1 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B2 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B3 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B4 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B6 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B7 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B8 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B9 1000Mbps
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B01 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B02 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B03 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B04 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B05 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B06 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B07 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B08 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B09 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B10 Netflix
+      - 中国-法国 IPLC B01
+      - 中国-法国 IPLC B02
+      - 中国-法国 IPLC B03
+      - 中国-法国 IPLC B04
+      - 中国-法国 IPLC B05
+      - 中国-澳大利亚 IPLC 悉尼 B01
+      - 中国-澳大利亚 IPLC 悉尼 B02
+      - 中国-澳大利亚 IPLC 悉尼 B03
+      - 中国-澳大利亚 IPLC 悉尼 B04
+      - 中国-澳大利亚 IPLC 悉尼 B05
+      - 中国-爱尔兰 IPLC B01
+      - 中国-爱尔兰 IPLC B02
+      - 中国-爱尔兰 IPLC B03
+      - 中国-爱尔兰 IPLC B04
+      - 中国-爱尔兰 IPLC B05
+      - 中国-英国伦敦电信 IEPL B01
+      - 中国-英国伦敦电信 IEPL B02
+      - 中国-英国伦敦电信 IEPL B03
+      - 中国-英国伦敦电信 IEPL B04
+      - 中国-韩国 IPLC B01 Netflix
+      - 中国-韩国 IPLC B02 Netflix
+      - 中国-韩国 IPLC B03 Netflix
+      - 中国-韩国 IPLC B04 Netflix
+      - 中国-韩国 IPLC B05 Netflix
+      - 中国-韩国 IPLC B06 Netflix
+      - 中国-韩国 IPLC B07 Netflix
+      - 中国-韩国 IPLC B08 Netflix
+      - 中国-韩国 IPLC B09 Netflix
+      - 中国-韩国 IPLC B10 Netflix
+      - 中国-韩国首尔 游戏IEPL B 01 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 02 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 03 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 04 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 05 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 06 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 07 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 08 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 09 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 10 Netflix 原生游戏解锁
+      - 中国-香港 IEPL Equinix HK2 B 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 02 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 03 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 04 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 06 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 07 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 08 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 09 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 10 1Gbps HBO TVB
+      - 俄罗斯 01
+      - 俄罗斯 02
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 因V2ray重大漏洞问题，暂时下架全部V2节点。请使用ssr/ss连接方式进行使用。
+      - 土耳其
+      - 巴西
+      - 新加坡 Legacy Magic IEPL 中继 B01 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B02 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B03 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B04 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B05 Netflix
+      - 新加坡 Magic IEPL 中继 B01 Netflix
+      - 新加坡 Magic IEPL 中继 B02 Netflix
+      - 新加坡 Magic IEPL 中继 B03 Netflix
+      - 新加坡 Magic IEPL 中继 B04 Netflix
+      - 新加坡 Magic IEPL 中继 B05 Netflix
+      - 新加坡高级 IEPL 中继 B01 Netflix
+      - 新加坡高级 IEPL 中继 B02 Netflix
+      - 日本 ソフトバンク B01 500Mbps 1x Netflix
+      - 日本 ソフトバンク B02 500Mbps 1x Netflix
+      - 日本 ソフトバンク B03 500Mbps 1x Netflix
+      - 日本 ソフトバンク B04 500Mbps 1x Netflix
+      - 日本 ソフトバンク B05 500Mbps 1x Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ B 01
+      - 日本 まつやまし auひかり ホーム1ギガ B 02
+      - 日本 まつやまし auひかり ホーム1ギガ B 03
+      - 日本 まつやまし auひかり ホーム1ギガ B 04
+      - 日本 まつやまし auひかり ホーム1ギガ B 06
+      - 日本 まつやまし auひかり ホーム1ギガ B 07
+      - 日本 まつやまし auひかり ホーム1ギガ B 08
+      - 日本 まつやまし auひかり ホーム1ギガ B 09
+      - 日本 まつやまし auひかり ホーム1ギガ B 10
+      - 日本 まつやまし auひかり ホーム1ギガ B 11
+      - 日本 まつやまし auひかり ホーム1ギガ B 12
+      - 日本 まつやまし auひかり ホーム1ギガ B 13
+      - 日本 まつやまし auひかり ホーム1ギガ B 14
+      - 日本 まつやまし auひかり ホーム1ギガ B 15
+      - 日本 まつやまし auひかり ホーム1ギガ B 16
+      - 日本大阪 オプテージ B 01
+      - 日本大阪 オプテージ B 02
+      - 日本大阪 オプテージ B 03
+      - 日本大阪 オプテージ B 04
+      - 日本大阪 オプテージ B 05
+      - 日本大阪 オプテージ B 06
+      - 日本大阪 オプテージ B 07
+      - 本站无Ins推广渠道 Ins推广渠道均为二手倒卖
+      - 本站无QQ购买渠道 QQ卖家购买均为二手倒卖
+      - 本站无微信购买渠道 微信购买均为二手倒卖
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 游戏 中港 IPLC B01
+      - 游戏 中港 IPLC B02
+      - 游戏 中港 IPLC B03
+      - 游戏 中港 IPLC B04
+      - 游戏 中港 IPLC B05
+      - 游戏 中港 IPLC B06
+      - 精简 11
+      - 精简 12
+      - 精简 13
+      - 精简 14
+      - 精简 15
+      - 精简 16
+      - 精简 17
+      - 精简 18
+      - 精简 19
+      - 精简 20
+      - 美国实验性 IEPL 中继 B01
+      - 美国实验性 IEPL 中继 B02
+      - 美国实验性 IEPL 中继 B03
+      - 美国实验性 IEPL 中继 B04
+      - 美国实验性 IEPL 中继 B05
+      - 美国高级 IEPL 中继 B01
+      - 美国高级 IEPL 中继 B02
+      - 美国高级 IEPL 中继 B03
+      - 美国高级 IEPL 中继 B04
+      - 美国高级 IEPL 中继 B05
+      - 阿根廷
+      - 集客VPLS/5000Mbps/5000Mbps/上海-(国际)香港 B01
+      - 韩国 전라북도 전주시 商宽 B 01
+      - 韩国 전라북도 전주시 商宽 B 02
+      - 韩国 전라북도 전주시 商宽 B 03
+      - 韩国 전라북도 전주시 商宽 B 04
+      - 韩国 전라북도 전주시 商宽 B 05
+      - 韩国 전라북도 전주시 商宽 B 06
+      - 韩国 전라북도 전주시 商宽 B 07
+      - 韩国 전라북도 전주시 商宽 B 08
+      - 韩国 전라북도 전주시 商宽 B 09
+      - 韩国 전라북도 전주시 商宽 B 10
+      - 香港 油尖旺御金·国峯 網上行寬頻 B01
+      - 香港 油尖旺御金·国峯 網上行寬頻 B02
+      - 香港 油尖旺御金·国峯 網上行寬頻 B03
+      - 香港 油尖旺御金·国峯 網上行寬頻 B04
+      - 香港 油尖旺御金·国峯 網上行寬頻 B05
+      - 香港 油尖旺御金·国峯 網上行寬頻 B06
+      - 香港 油尖旺御金·国峯 網上行寬頻 B07
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V2云香港节点
-      - V2云俄罗斯节点
-      - 日本
-      - (欢迎订阅youtube：8度科技)
-      - (欢迎订阅youtube：8度科技) 2
-      - _US_美国
-      - (欢迎订阅youtube：8度科技) 3
-      - (欢迎订阅youtube：8度科技) 4
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - (欢迎订阅youtube：8度科技) 5
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B01
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B02
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B03
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B04
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B05
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B06
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B07
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B08
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B09
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B10
+      - IPV6接入  HIFI音乐优化
+      - IPV6接入  优化#我编不下去了
+      - IPV6接入 嘉心糖优化#嘉然姫の犬
+      - IPV6接入 摄影优化#忠祥 拍摄超级利器 尼康800定
+      - IPV6接入 未知优化
+      - IPV6接入 标准配置#朦胧幻象
+      - IPV6接入 没有优化
+      - IPV6接入 网课优化#Nuclear 101-核武器设计与制造
+      - IPV6接入 脆鲨优化#YBB APEX日服
+      - IPV6接入 视频优化
+      - IPV6接入 随便瞎优化
+      - 中国-加拿大 IPLC B01
+      - 中国-加拿大 IPLC B02
+      - 中国-加拿大 IPLC B03
+      - 中国-加拿大 IPLC B04
+      - 中国-加拿大 IPLC B05
+      - 中国-印度 IPLC B01 孟买
+      - 中国-印度 IPLC B02 孟买
+      - 中国-印度 IPLC B03 贾坎德
+      - 中国-印度 IPLC B04 贾坎德
+      - 中国-印度 IPLC B05 贾坎德
+      - 中国-印度 IPLC B06 贾坎德
+      - 中国-印度 IPLC B07 泰米尔纳德
+      - 中国-印度 IPLC B08 泰米尔纳德
+      - 中国-台湾IEPL Hinet固接 B01
+      - 中国-台湾IEPL Hinet固接 B02
+      - 中国-台湾IEPL Hinet固接 B03
+      - 中国-台湾IEPL Hinet固接 B04
+      - 中国-台湾IEPL Hinet固接 B05
+      - 中国-台湾IEPL Hinet固接 B06
+      - 中国-台湾IEPL Hinet固接 B07
+      - 中国-台湾IEPL Hinet固接 B08
+      - 中国-台湾IEPL Hinet固接 B09
+      - 中国-台湾嘉义 IPLC B01 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B02 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B03 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B04 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B05 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B06 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B07 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B08 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B09 游戏专线Netflix 动画疯
+      - 中国-台湾高雄 IPLC B01 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B02 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B03 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B04 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B05 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B06 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B07 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B08 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B09 Netflix 动画疯
+      - 中国-日本 多协议标签交换虚拟专用网 B1 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B2 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B3 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B4 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B6 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B7 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B8 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B9 1000Mbps
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B01 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B02 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B03 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B04 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B05 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B06 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B07 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B08 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B09 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B10 Netflix
+      - 中国-法国 IPLC B01
+      - 中国-法国 IPLC B02
+      - 中国-法国 IPLC B03
+      - 中国-法国 IPLC B04
+      - 中国-法国 IPLC B05
+      - 中国-澳大利亚 IPLC 悉尼 B01
+      - 中国-澳大利亚 IPLC 悉尼 B02
+      - 中国-澳大利亚 IPLC 悉尼 B03
+      - 中国-澳大利亚 IPLC 悉尼 B04
+      - 中国-澳大利亚 IPLC 悉尼 B05
+      - 中国-爱尔兰 IPLC B01
+      - 中国-爱尔兰 IPLC B02
+      - 中国-爱尔兰 IPLC B03
+      - 中国-爱尔兰 IPLC B04
+      - 中国-爱尔兰 IPLC B05
+      - 中国-英国伦敦电信 IEPL B01
+      - 中国-英国伦敦电信 IEPL B02
+      - 中国-英国伦敦电信 IEPL B03
+      - 中国-英国伦敦电信 IEPL B04
+      - 中国-韩国 IPLC B01 Netflix
+      - 中国-韩国 IPLC B02 Netflix
+      - 中国-韩国 IPLC B03 Netflix
+      - 中国-韩国 IPLC B04 Netflix
+      - 中国-韩国 IPLC B05 Netflix
+      - 中国-韩国 IPLC B06 Netflix
+      - 中国-韩国 IPLC B07 Netflix
+      - 中国-韩国 IPLC B08 Netflix
+      - 中国-韩国 IPLC B09 Netflix
+      - 中国-韩国 IPLC B10 Netflix
+      - 中国-韩国首尔 游戏IEPL B 01 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 02 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 03 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 04 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 05 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 06 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 07 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 08 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 09 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 10 Netflix 原生游戏解锁
+      - 中国-香港 IEPL Equinix HK2 B 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 02 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 03 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 04 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 06 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 07 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 08 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 09 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 10 1Gbps HBO TVB
+      - 俄罗斯 01
+      - 俄罗斯 02
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 因V2ray重大漏洞问题，暂时下架全部V2节点。请使用ssr/ss连接方式进行使用。
+      - 土耳其
+      - 巴西
+      - 新加坡 Legacy Magic IEPL 中继 B01 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B02 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B03 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B04 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B05 Netflix
+      - 新加坡 Magic IEPL 中继 B01 Netflix
+      - 新加坡 Magic IEPL 中继 B02 Netflix
+      - 新加坡 Magic IEPL 中继 B03 Netflix
+      - 新加坡 Magic IEPL 中继 B04 Netflix
+      - 新加坡 Magic IEPL 中继 B05 Netflix
+      - 新加坡高级 IEPL 中继 B01 Netflix
+      - 新加坡高级 IEPL 中继 B02 Netflix
+      - 日本 ソフトバンク B01 500Mbps 1x Netflix
+      - 日本 ソフトバンク B02 500Mbps 1x Netflix
+      - 日本 ソフトバンク B03 500Mbps 1x Netflix
+      - 日本 ソフトバンク B04 500Mbps 1x Netflix
+      - 日本 ソフトバンク B05 500Mbps 1x Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ B 01
+      - 日本 まつやまし auひかり ホーム1ギガ B 02
+      - 日本 まつやまし auひかり ホーム1ギガ B 03
+      - 日本 まつやまし auひかり ホーム1ギガ B 04
+      - 日本 まつやまし auひかり ホーム1ギガ B 06
+      - 日本 まつやまし auひかり ホーム1ギガ B 07
+      - 日本 まつやまし auひかり ホーム1ギガ B 08
+      - 日本 まつやまし auひかり ホーム1ギガ B 09
+      - 日本 まつやまし auひかり ホーム1ギガ B 10
+      - 日本 まつやまし auひかり ホーム1ギガ B 11
+      - 日本 まつやまし auひかり ホーム1ギガ B 12
+      - 日本 まつやまし auひかり ホーム1ギガ B 13
+      - 日本 まつやまし auひかり ホーム1ギガ B 14
+      - 日本 まつやまし auひかり ホーム1ギガ B 15
+      - 日本 まつやまし auひかり ホーム1ギガ B 16
+      - 日本大阪 オプテージ B 01
+      - 日本大阪 オプテージ B 02
+      - 日本大阪 オプテージ B 03
+      - 日本大阪 オプテージ B 04
+      - 日本大阪 オプテージ B 05
+      - 日本大阪 オプテージ B 06
+      - 日本大阪 オプテージ B 07
+      - 本站无Ins推广渠道 Ins推广渠道均为二手倒卖
+      - 本站无QQ购买渠道 QQ卖家购买均为二手倒卖
+      - 本站无微信购买渠道 微信购买均为二手倒卖
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 游戏 中港 IPLC B01
+      - 游戏 中港 IPLC B02
+      - 游戏 中港 IPLC B03
+      - 游戏 中港 IPLC B04
+      - 游戏 中港 IPLC B05
+      - 游戏 中港 IPLC B06
+      - 精简 11
+      - 精简 12
+      - 精简 13
+      - 精简 14
+      - 精简 15
+      - 精简 16
+      - 精简 17
+      - 精简 18
+      - 精简 19
+      - 精简 20
+      - 美国实验性 IEPL 中继 B01
+      - 美国实验性 IEPL 中继 B02
+      - 美国实验性 IEPL 中继 B03
+      - 美国实验性 IEPL 中继 B04
+      - 美国实验性 IEPL 中继 B05
+      - 美国高级 IEPL 中继 B01
+      - 美国高级 IEPL 中继 B02
+      - 美国高级 IEPL 中继 B03
+      - 美国高级 IEPL 中继 B04
+      - 美国高级 IEPL 中继 B05
+      - 阿根廷
+      - 集客VPLS/5000Mbps/5000Mbps/上海-(国际)香港 B01
+      - 韩国 전라북도 전주시 商宽 B 01
+      - 韩国 전라북도 전주시 商宽 B 02
+      - 韩国 전라북도 전주시 商宽 B 03
+      - 韩国 전라북도 전주시 商宽 B 04
+      - 韩国 전라북도 전주시 商宽 B 05
+      - 韩国 전라북도 전주시 商宽 B 06
+      - 韩国 전라북도 전주시 商宽 B 07
+      - 韩国 전라북도 전주시 商宽 B 08
+      - 韩国 전라북도 전주시 商宽 B 09
+      - 韩国 전라북도 전주시 商宽 B 10
+      - 香港 油尖旺御金·国峯 網上行寬頻 B01
+      - 香港 油尖旺御金·国峯 網上行寬頻 B02
+      - 香港 油尖旺御金·国峯 網上行寬頻 B03
+      - 香港 油尖旺御金·国峯 網上行寬頻 B04
+      - 香港 油尖旺御金·国峯 網上行寬頻 B05
+      - 香港 油尖旺御金·国峯 網上行寬頻 B06
+      - 香港 油尖旺御金·国峯 網上行寬頻 B07
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -173,18 +1948,233 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - V2云香港节点
-      - V2云俄罗斯节点
-      - 日本
-      - (欢迎订阅youtube：8度科技)
-      - (欢迎订阅youtube：8度科技) 2
-      - _US_美国
-      - (欢迎订阅youtube：8度科技) 3
-      - (欢迎订阅youtube：8度科技) 4
-      - _US_美国 2
-      - _US_美国 3
-      - _US_美国 4
-      - (欢迎订阅youtube：8度科技) 5
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B01
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B02
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B03
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B04
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B05
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B06
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B07
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B08
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B09
+      - ASYNCHRONOUS TRANSFERMODE 永久虚通路连接PVCC B10
+      - IPV6接入  HIFI音乐优化
+      - IPV6接入  优化#我编不下去了
+      - IPV6接入 嘉心糖优化#嘉然姫の犬
+      - IPV6接入 摄影优化#忠祥 拍摄超级利器 尼康800定
+      - IPV6接入 未知优化
+      - IPV6接入 标准配置#朦胧幻象
+      - IPV6接入 没有优化
+      - IPV6接入 网课优化#Nuclear 101-核武器设计与制造
+      - IPV6接入 脆鲨优化#YBB APEX日服
+      - IPV6接入 视频优化
+      - IPV6接入 随便瞎优化
+      - 中国-加拿大 IPLC B01
+      - 中国-加拿大 IPLC B02
+      - 中国-加拿大 IPLC B03
+      - 中国-加拿大 IPLC B04
+      - 中国-加拿大 IPLC B05
+      - 中国-印度 IPLC B01 孟买
+      - 中国-印度 IPLC B02 孟买
+      - 中国-印度 IPLC B03 贾坎德
+      - 中国-印度 IPLC B04 贾坎德
+      - 中国-印度 IPLC B05 贾坎德
+      - 中国-印度 IPLC B06 贾坎德
+      - 中国-印度 IPLC B07 泰米尔纳德
+      - 中国-印度 IPLC B08 泰米尔纳德
+      - 中国-台湾IEPL Hinet固接 B01
+      - 中国-台湾IEPL Hinet固接 B02
+      - 中国-台湾IEPL Hinet固接 B03
+      - 中国-台湾IEPL Hinet固接 B04
+      - 中国-台湾IEPL Hinet固接 B05
+      - 中国-台湾IEPL Hinet固接 B06
+      - 中国-台湾IEPL Hinet固接 B07
+      - 中国-台湾IEPL Hinet固接 B08
+      - 中国-台湾IEPL Hinet固接 B09
+      - 中国-台湾嘉义 IPLC B01 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B02 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B03 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B04 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B05 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B06 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B07 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B08 游戏专线Netflix 动画疯
+      - 中国-台湾嘉义 IPLC B09 游戏专线Netflix 动画疯
+      - 中国-台湾高雄 IPLC B01 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B02 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B03 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B04 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B05 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B06 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B07 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B08 Netflix 动画疯
+      - 中国-台湾高雄 IPLC B09 Netflix 动画疯
+      - 中国-日本 多协议标签交换虚拟专用网 B1 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B2 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B3 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B4 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B6 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B7 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B8 1000Mbps
+      - 中国-日本 多协议标签交换虚拟专用网 B9 1000Mbps
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B01 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B02 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B03 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B04 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B05 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B06 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B07 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B08 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B09 Netflix
+      - 中国-日本 沪日IEPL传输 Equinix-TY8 B10 Netflix
+      - 中国-法国 IPLC B01
+      - 中国-法国 IPLC B02
+      - 中国-法国 IPLC B03
+      - 中国-法国 IPLC B04
+      - 中国-法国 IPLC B05
+      - 中国-澳大利亚 IPLC 悉尼 B01
+      - 中国-澳大利亚 IPLC 悉尼 B02
+      - 中国-澳大利亚 IPLC 悉尼 B03
+      - 中国-澳大利亚 IPLC 悉尼 B04
+      - 中国-澳大利亚 IPLC 悉尼 B05
+      - 中国-爱尔兰 IPLC B01
+      - 中国-爱尔兰 IPLC B02
+      - 中国-爱尔兰 IPLC B03
+      - 中国-爱尔兰 IPLC B04
+      - 中国-爱尔兰 IPLC B05
+      - 中国-英国伦敦电信 IEPL B01
+      - 中国-英国伦敦电信 IEPL B02
+      - 中国-英国伦敦电信 IEPL B03
+      - 中国-英国伦敦电信 IEPL B04
+      - 中国-韩国 IPLC B01 Netflix
+      - 中国-韩国 IPLC B02 Netflix
+      - 中国-韩国 IPLC B03 Netflix
+      - 中国-韩国 IPLC B04 Netflix
+      - 中国-韩国 IPLC B05 Netflix
+      - 中国-韩国 IPLC B06 Netflix
+      - 中国-韩国 IPLC B07 Netflix
+      - 中国-韩国 IPLC B08 Netflix
+      - 中国-韩国 IPLC B09 Netflix
+      - 中国-韩国 IPLC B10 Netflix
+      - 中国-韩国首尔 游戏IEPL B 01 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 02 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 03 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 04 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 05 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 06 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 07 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 08 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 09 Netflix 原生游戏解锁
+      - 中国-韩国首尔 游戏IEPL B 10 Netflix 原生游戏解锁
+      - 中国-香港 IEPL Equinix HK2 B 01 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 02 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 03 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 04 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 05 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 06 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 07 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 08 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 09 1Gbps HBO TVB
+      - 中国-香港 IEPL Equinix HK2 B 10 1Gbps HBO TVB
+      - 俄罗斯 01
+      - 俄罗斯 02
+      - 俄罗斯 03
+      - 俄罗斯 04
+      - 因V2ray重大漏洞问题，暂时下架全部V2节点。请使用ssr/ss连接方式进行使用。
+      - 土耳其
+      - 巴西
+      - 新加坡 Legacy Magic IEPL 中继 B01 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B02 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B03 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B04 Netflix
+      - 新加坡 Legacy Magic IEPL 中继 B05 Netflix
+      - 新加坡 Magic IEPL 中继 B01 Netflix
+      - 新加坡 Magic IEPL 中继 B02 Netflix
+      - 新加坡 Magic IEPL 中继 B03 Netflix
+      - 新加坡 Magic IEPL 中继 B04 Netflix
+      - 新加坡 Magic IEPL 中继 B05 Netflix
+      - 新加坡高级 IEPL 中继 B01 Netflix
+      - 新加坡高级 IEPL 中继 B02 Netflix
+      - 日本 ソフトバンク B01 500Mbps 1x Netflix
+      - 日本 ソフトバンク B02 500Mbps 1x Netflix
+      - 日本 ソフトバンク B03 500Mbps 1x Netflix
+      - 日本 ソフトバンク B04 500Mbps 1x Netflix
+      - 日本 ソフトバンク B05 500Mbps 1x Netflix
+      - 日本 まつやまし auひかり ホーム1ギガ B 01
+      - 日本 まつやまし auひかり ホーム1ギガ B 02
+      - 日本 まつやまし auひかり ホーム1ギガ B 03
+      - 日本 まつやまし auひかり ホーム1ギガ B 04
+      - 日本 まつやまし auひかり ホーム1ギガ B 06
+      - 日本 まつやまし auひかり ホーム1ギガ B 07
+      - 日本 まつやまし auひかり ホーム1ギガ B 08
+      - 日本 まつやまし auひかり ホーム1ギガ B 09
+      - 日本 まつやまし auひかり ホーム1ギガ B 10
+      - 日本 まつやまし auひかり ホーム1ギガ B 11
+      - 日本 まつやまし auひかり ホーム1ギガ B 12
+      - 日本 まつやまし auひかり ホーム1ギガ B 13
+      - 日本 まつやまし auひかり ホーム1ギガ B 14
+      - 日本 まつやまし auひかり ホーム1ギガ B 15
+      - 日本 まつやまし auひかり ホーム1ギガ B 16
+      - 日本大阪 オプテージ B 01
+      - 日本大阪 オプテージ B 02
+      - 日本大阪 オプテージ B 03
+      - 日本大阪 オプテージ B 04
+      - 日本大阪 オプテージ B 05
+      - 日本大阪 オプテージ B 06
+      - 日本大阪 オプテージ B 07
+      - 本站无Ins推广渠道 Ins推广渠道均为二手倒卖
+      - 本站无QQ购买渠道 QQ卖家购买均为二手倒卖
+      - 本站无微信购买渠道 微信购买均为二手倒卖
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 01
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 02
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 03
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 04
+      - 沪港 IEPL专线 港区TVB/HBO/Netflix解锁 05
+      - 游戏 中港 IPLC B01
+      - 游戏 中港 IPLC B02
+      - 游戏 中港 IPLC B03
+      - 游戏 中港 IPLC B04
+      - 游戏 中港 IPLC B05
+      - 游戏 中港 IPLC B06
+      - 精简 11
+      - 精简 12
+      - 精简 13
+      - 精简 14
+      - 精简 15
+      - 精简 16
+      - 精简 17
+      - 精简 18
+      - 精简 19
+      - 精简 20
+      - 美国实验性 IEPL 中继 B01
+      - 美国实验性 IEPL 中继 B02
+      - 美国实验性 IEPL 中继 B03
+      - 美国实验性 IEPL 中继 B04
+      - 美国实验性 IEPL 中继 B05
+      - 美国高级 IEPL 中继 B01
+      - 美国高级 IEPL 中继 B02
+      - 美国高级 IEPL 中继 B03
+      - 美国高级 IEPL 中继 B04
+      - 美国高级 IEPL 中继 B05
+      - 阿根廷
+      - 集客VPLS/5000Mbps/5000Mbps/上海-(国际)香港 B01
+      - 韩国 전라북도 전주시 商宽 B 01
+      - 韩国 전라북도 전주시 商宽 B 02
+      - 韩国 전라북도 전주시 商宽 B 03
+      - 韩国 전라북도 전주시 商宽 B 04
+      - 韩国 전라북도 전주시 商宽 B 05
+      - 韩国 전라북도 전주시 商宽 B 06
+      - 韩国 전라북도 전주시 商宽 B 07
+      - 韩国 전라북도 전주시 商宽 B 08
+      - 韩国 전라북도 전주시 商宽 B 09
+      - 韩国 전라북도 전주시 商宽 B 10
+      - 香港 油尖旺御金·国峯 網上行寬頻 B01
+      - 香港 油尖旺御金·国峯 網上行寬頻 B02
+      - 香港 油尖旺御金·国峯 網上行寬頻 B03
+      - 香港 油尖旺御金·国峯 網上行寬頻 B04
+      - 香港 油尖旺御金·国峯 網上行寬頻 B05
+      - 香港 油尖旺御金·国峯 網上行寬頻 B06
+      - 香港 油尖旺御金·国峯 網上行寬頻 B07
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
